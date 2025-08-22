@@ -153,3 +153,6 @@ EMAIL_HOST_PASSWORD="sfki wpcn sxib uojk"
 LOGIN_REDIRECT_URL = 'cars_reviews_admin'
 
 LOGOUT_REDIRECT_URL = '/'  # Asegúrate de que 'home' esté en tus urls
+
+
+SCRAPEDO_KEY='de1503722660424299362c7556b69ee1e8d2fd4edf4'

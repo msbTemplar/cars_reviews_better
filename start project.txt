@@ -47,6 +47,14 @@ fogsloves@gmail.com
 
 'minuevocoche.pythonanywhere.com'
 
+https://dashboard.scrape.do/playground
+
+de1503722660424299362c7556b69ee1e8d2fd4edf4
+
+pip install python-dotenv
+
+
+
 node -v
 
 npm -v
