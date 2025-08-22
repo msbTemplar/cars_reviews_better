@@ -17,6 +17,11 @@ from django.core.management import call_command
 
 # Create your views here.
 
+def todos_mis_proyectos(request):
+    fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
+    context = {'fecha_hora_actual': fecha_hora_actual}
+    return render(request, 'cars_reviews_better_app/todos_mis_proyectos.html', context)
+
 def populate_noticias(request):
     try:
         call_command('populate_noticias')  # Nombre de tu comando
@@ -46,7 +51,7 @@ def buscar_noticias(request):
     
     comments = CommentBuscarNoticias.objects.order_by('-created_at')  
     context = {'fecha_hora_actual': fecha_hora_actual, 'comments':comments, 'form':form, 'query': query, 'resultados': resultados}
-
+    
     return render(request, 'cars_reviews_better_app/buscar_noticias.html', context)
 
 def set_cookie_consent(request):
@@ -292,7 +297,7 @@ def custom_logout_view(request):
     return redirect('home') 
 
 def home_imdb(request):
-    url = "https://www.imdb.com/chart/moviemeter/"
+    url = "https://www.imdb.com/es-es/chart/moviemeter/"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
         "Accept-Language": "en-US,en;q=0.9",

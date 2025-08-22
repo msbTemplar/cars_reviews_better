@@ -37,9 +37,11 @@ git branch -M main
 git remote add origin git@github.com:msbTemplar/cars_reviews_better.git
 git push -u origin main
 
+minuevocoche
 
+pip install -r requirements.txt
 
-
+minuevocoche.pythonanywhere.com
 
 
 
