@@ -43,7 +43,9 @@ pip install -r requirements.txt
 
 minuevocoche.pythonanywhere.com
 
+fogsloves@gmail.com
 
+'minuevocoche.pythonanywhere.com'
 
 node -v
 

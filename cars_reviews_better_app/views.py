@@ -296,6 +296,79 @@ def custom_logout_view(request):
     logout(request)
     return redirect('home') 
 
+
+
+def home_imdb_web(request):
+    url = "https://www.imdb.com/es-es/chart/moviemeter/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    }
+    movies = []
+    error_message = None
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Lanza una excepción para errores 4xx/5xx
+
+        soup = BeautifulSoup(response.content, "html.parser")
+        script_tag = soup.find("script", type="application/ld+json")
+
+        if not script_tag:
+            error_message = "No se encontró la información JSON de películas."
+        else:
+            imdb_data = json.loads(script_tag.string)
+
+            for item in imdb_data.get("itemListElement", []):
+                movie = item.get("item", {})
+                movies.append({
+                    "title": movie.get("name", "Sin título"),
+                    "url": movie.get("url", ""),
+                    "description": movie.get("description", "Sin descripción"),
+                    "image": movie.get("image", ""),
+                    "rating": movie.get("aggregateRating", {}).get("ratingValue", "N/A"),
+                    "genre": movie.get("genre", "N/A"),
+                    "duration": movie.get("duration", "N/A"),
+                })
+    
+    except requests.exceptions.RequestException as e:
+        # Captura errores de red (ProxyError, Timeout, etc.)
+        error_message = f"Error de conexión: {e}"
+    except json.JSONDecodeError:
+        # Captura errores si el JSON es inválido
+        error_message = "Error al analizar los datos de IMDb."
+    except Exception as e:
+        # Captura cualquier otro error inesperado
+        error_message = f"Ocurrió un error inesperado: {e}"
+    
+    # Manejo del formulario
+    if request.method == 'POST':
+        form = CommentIMDBForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('autonews')
+    else:
+        form = CommentIMDBForm()
+
+    # Paginación
+    p = Paginator(movies, 3)
+    page_number = request.GET.get('page')
+    page_obj = p.get_page(page_number)
+    nums = range(1, p.num_pages + 1)
+    
+    fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
+    
+    context = {
+        'movies': page_obj,  # Se renombra para ser más claro
+        'fecha_hora_actual': fecha_hora_actual,
+        'comments': CommentIMDB.objects.order_by('-created_at'),
+        'form': form,
+        'nums': nums,
+        'name': request.user.username if request.user.is_authenticated else 'Invitado',
+        'error': error_message
+    }
+
+    return render(request, "cars_reviews_better_app/noticias.html", context)
+
 def home_imdb(request):
     url = "https://www.imdb.com/es-es/chart/moviemeter/"
     headers = {
