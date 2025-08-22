@@ -326,7 +326,7 @@ def home_imdb_web(request):
         
         # --- LÍNEA AÑADIDA PARA VER EL HTML COMPLETO ---
         print("--- INICIO DE CONTENIDO HTML RECIBIDO ---")
-        print(response.text)
+        #print(response.text)
         # Guarda el HTML de la página en un archivo
         with open("pagina_guardada_imdb_web.html", "w", encoding="utf-8") as f:
             f.write(response.text)
