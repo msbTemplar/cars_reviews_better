@@ -154,5 +154,5 @@ LOGIN_REDIRECT_URL = 'cars_reviews_admin'
 
 LOGOUT_REDIRECT_URL = '/'  # Asegúrate de que 'home' esté en tus urls
 
-
+SCRAPERAPI_KEY = 'e2912b7c5187546fcb4a25c5dca36d87'
 SCRAPEDO_KEY='de1503722660424299362c7556b69ee1e8d2fd4edf4'

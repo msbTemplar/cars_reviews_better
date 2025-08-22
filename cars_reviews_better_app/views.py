@@ -298,9 +298,119 @@ def custom_logout_view(request):
     logout(request)
     return redirect('home') 
 
-
-
 def home_imdb_web(request):
+    movies = []
+    error_message = None
+    
+    # Intenta obtener la clave de API desde los settings.py
+    scraperapi_key = getattr(settings, 'SCRAPERAPI_KEY', None)
+    
+    if scraperapi_key:
+        print("Usando ScraperAPI...")
+        # Usa la API de ScraperAPI para obtener el contenido de IMDb
+        payload = {'api_key': scraperapi_key, 'url': 'https://www.imdb.com/es-es/chart/moviemeter/'}
+        api_url = 'https://api.scraperapi.com/'
+        
+        try:
+            response = requests.get(api_url, params=payload)
+            response.raise_for_status()
+            
+            # El resto del código de scraping sigue igual
+            soup = BeautifulSoup(response.content, "html.parser")
+            script_tag = soup.find("script", type="application/ld+json")
+            
+            # ... (lógica de JSON y manejo de errores) ...
+            if not script_tag:
+                error_message = "No se encontró la información JSON de películas."
+            else:
+                imdb_data = json.loads(script_tag.string)
+
+                for item in imdb_data.get("itemListElement", []):
+                    movie = item.get("item", {})
+                    movies.append({
+                        "title": movie.get("name", "Sin título"),
+                        "url": movie.get("url", ""),
+                        "description": movie.get("description", "Sin descripción"),
+                        "image": movie.get("image", ""),
+                        "rating": movie.get("aggregateRating", {}).get("ratingValue", "N/A"),
+                        "genre": movie.get("genre", "N/A"),
+                        "duration": movie.get("duration", "N/A"),
+                    })
+
+        except requests.exceptions.RequestException as e:
+            error_message = f"Error de conexión: {e}"
+        except json.JSONDecodeError:
+            error_message = "Error al analizar los datos de IMDb."
+        except Exception as e:
+            error_message = f"Ocurrió un error inesperado: {e}"
+
+    else:
+        # Lógica para entorno local sin clave de API
+        print("No se encontró la clave de ScraperAPI, haciendo petición directa a IMDb...")
+        url_direct = "https://www.imdb.com/es-es/chart/moviemeter/"
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        }
+        try:
+            response = requests.get(url_direct, headers=headers)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, "html.parser")
+            script_tag = soup.find("script", type="application/ld+json")
+
+            if not script_tag:
+                error_message = "No se encontró la información JSON de películas."
+            else:
+                imdb_data = json.loads(script_tag.string)
+                for item in imdb_data.get("itemListElement", []):
+                    movie = item.get("item", {})
+                    movies.append({
+                        "title": movie.get("name", "Sin título"),
+                        "url": movie.get("url", ""),
+                        "description": movie.get("description", "Sin descripción"),
+                        "image": movie.get("image", ""),
+                        "rating": movie.get("aggregateRating", {}).get("ratingValue", "N/A"),
+                        "genre": movie.get("genre", "N/A"),
+                        "duration": movie.get("duration", "N/A"),
+                    })
+        except requests.exceptions.RequestException as e:
+            error_message = f"Error de conexión directa a IMDb: {e}"
+        except json.JSONDecodeError:
+            error_message = "Error al analizar los datos de IMDb."
+        except Exception as e:
+            error_message = f"Ocurrió un error inesperado: {e}"
+
+    if request.method == 'POST':
+        form = CommentIMDBForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('autonews')
+    else:
+        form = CommentIMDBForm()
+
+    p = Paginator(movies, 3)
+    page = request.GET.get('page')
+    todas_movies = p.get_page(page)
+    nums = "a" * todas_movies.paginator.num_pages
+    nums = range(1, todas_movies.paginator.num_pages + 1)  # Rango dinámico para las páginas
+    
+    fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
+    
+    context = {
+        'movies': todas_movies,
+        'fecha_hora_actual': fecha_hora_actual,
+        'comments': CommentIMDB.objects.order_by('-created_at'),
+        'form': form,
+        'nums': nums,
+        'name': request.user.username if request.user.is_authenticated else 'Invitado',
+        'error': error_message
+    }
+
+    return render(request, "cars_reviews_better_app/noticias.html", context)
+
+
+
+def home_imdb_web1(request):
     movies = []
     error_message = None
     
