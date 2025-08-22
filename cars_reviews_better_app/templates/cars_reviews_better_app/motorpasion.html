@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="{% url 'home' %}">Home</a>
+                <span class="breadcrumb-item active">Contact</span>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    {% if message_name %}
+    <center>
+        <h2>Thanks {{ message_name }}</h2>
+        <h3>We received your email and will respond shortly ... </h3>
+    </center>
+    {% else %}
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="bg-light py-2 px-4 mb-3">
+                <h3 class="m-0">Noticias de Motorpasion</h3>
+            </div>
+            <div class="row">
+                {% for noticia_diferente in noticias %}
+                <div class="col-md-3 mb-3">
+                    <div class="card h-100">
+                        {% if noticia_diferente.img_url %}
+                        <img src="{{ noticia_diferente.img_url }}" class="card-img-top" alt="{{ noticia_diferente.titulo }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ noticia_diferente.titulo }}</h5>
+                            <a href="{{ noticia_diferente.link }}" target="_blank" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <p class="text-center">No hay noticias disponibles en este momento.</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <!-- Comments Section -->
+                <div class="bg-light mb-3" style="padding: 30px;">
+                    <h3 class="mb-4">{{ comments.count }} Comments</h3>
+                    {% for comment in comments %}
+                    <div class="media mb-4">
+                        <!-- Muestra la imagen del comentario si existe, o una imagen predeterminada si no -->
+                        {% if comment.image %}
+                            <img src="{{ comment.image.url }}" alt="User Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                        {% else %}
+                            <img src="{% static 'cars_reviews_better_app/img/user.jpg' %}" alt="Default User Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                        {% endif %}
+                        <div class="media-body">
+                            <h6>{{ comment.name }} <small><i>{{ comment.created_at }}</i></small></h6>
+                            <p>{{ comment.message }}</p>
+                        </div>
+                    </div>
+                    {% empty %}
+                        <p>No comments yet. Be the first to comment!</p>
+                    {% endfor %}
+                </div>
+
+                <!-- Comment Form -->
+                <div class="bg-light mb-3 p-4 rounded">
+                    <h3 class="mb-4">Leave a comment</h3>
+                    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                
+                        <!-- Renderiza automáticamente los campos del formulario -->
+                        {{ form.as_p }}
+                
+                        <!-- Botón de enviar -->
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary py-2 px-4">Submit Comment</button>
+                        </div>
+                    </form>
+                </div>
+                
+
+            </div>
+
+          
+        </div>
+        
+    </div>
+    <!-- Contact End -->
+
+      <!-- other_page.html -->
+      {% include 'footer_nav_bar.html' %}
+
+
+    
+
+
+    {% endif %}
+{% endblock %}

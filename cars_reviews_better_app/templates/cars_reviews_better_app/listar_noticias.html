@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="{% url 'home' %}">Home</a>
+                <span class="breadcrumb-item active">Contact</span>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    {% if message_name %}
+    <center>
+        <h2>Thanks {{ message_name }}</h2>
+        <h3>We received your email and will respond shortly ... </h3>
+    </center>
+    {% else %}
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="bg-light py-2 px-4 mb-3">
+                <h3 class="m-0">All most important last cars news from all over the world</h3>
+            </div>
+            <div class="row">
+                <!-- Cards Section -->
+                <div class="col-md-12">
+                    <!-- <div class="row">
+                        {% for noticia in noticias %}
+                        <div class="col-md-3 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ noticia.titulo }}</h5>
+                                    <a href="{{ noticia.link }}" target="_blank" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="col-12">
+                            <p class="text-center">No hay noticias disponibles en este momento.</p>
+                        </div>
+                        {% endfor %}
+                    </div> -->
+                    <div class="row">
+                        {% for noticia_diferente in todas_noticias_diferentes %}
+                        <div class="col-md-3 mb-3">
+                            <div class="card h-100">
+                                <!-- Imagen de la noticia -->
+                                {% if noticia_diferente.img_url %}
+                                <img src="{{ noticia_diferente.img_url }}" class="card-img-top" alt="{{ noticia_diferente.titulo }}">
+                                {% endif %}
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ noticia_diferente.titulo }}</h5>
+                                    <a href="{{ noticia_diferente.link }}" target="_blank" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="col-12">
+                            <p class="text-center">No hay noticias disponibles en este momento.</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    {% endif %}
+
+    <br /><br />
+    <br />
+    <center>
+    {% if todas_noticias_diferentes.has_previous %}
+    <a class="btn btn-primary" href="?page=1">&laquo; First</a>
+    <a
+      class="btn btn-success"
+      href="?page={{ todas_noticias_diferentes.previous_page_number }}"
+      >Previous</a
+    >
+    {% endif %}
+  
+    <div class="btn btn-light">
+      Page {{ todas_noticias_diferentes.number }} of {{ todas_noticias_diferentes.paginator.num_pages }}
+    </div>
+    {% if todas_noticias_diferentes.has_next %}
+    <a
+      class="btn btn-danger"
+      href="?page={{todas_noticias_diferentes.next_page_number}}"
+      >Next</a
+    >
+    <a
+      class="btn btn-warning"
+      href="?page={{ todas_noticias_diferentes.paginator.num_pages }}"
+      >Last &raquo;</a
+    >
+    {% endif %}
+    <br /><br />
+
+    </center>
+{% endblock %}

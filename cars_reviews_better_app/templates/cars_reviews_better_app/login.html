@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About the doctor and his cool staff {% endblock %}
+{% block meta_description %} This is the web site of Dr EMD the greatest who ever good {% endblock %}
+{% block content %}
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5">
+<div class="col-xl-12 col-lg-12 wow slideInUp" data-wow-delay="0.3s">
+<h1>Login 'For Admin user only'</h1>
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" class="form-control border-0 bg-light px-4" placeholder="Your Username" style="height: 55px;">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" class="form-control border-0 bg-light px-4" placeholder="Your Password" style="height: 55px;">
+    <button class="btn btn-primary w-100 py-3 mt-1" type="submit">Login</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,72 @@
+{% load static %}
+
+<!-- Navbar Start -->
+<div class="container-fluid p-0 mb-3">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+        <a href="" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'category_view' %}" class="nav-item nav-link">Categories</a>
+                <a href="{% url 'single_view' %}" class="nav-item nav-link">Single News</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Separated Last News</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="{% url 'motorpasion' %}" class="dropdown-item">Motorpasion</a>
+                        <a href="{% url 'carscoops' %}" class="dropdown-item">Carscoops</a>
+                        <a href="{% url 'insideevs' %}" class="dropdown-item">Insideevs</a>
+                        <a href="{% url 'carmagazine' %}" class="dropdown-item">Carmagazine</a>
+                        <a href="{% url 'autocar' %}" class="dropdown-item">Autocar</a>
+                        <a href="{% url 'autonews' %}" class="dropdown-item">Autonews</a>
+                    </div>
+                </div>
+                <a href="{% url 'lista_noticias' %}" class="nav-item nav-link">Last News</a>
+                <a href="{% url 'noticias_imdb' %}" class="nav-item nav-link">Noticias IMDB</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                {% if user.is_authenticated %}
+            <a href="{% url 'cars_reviews_admin' %}" class="nav-item nav-link">Cars Reviews Admin</a>
+            <a href="" class="nav-item nav-link">All the options</a>
+                <!--<a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>-->
+                <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-light  nav-item nav-link">Logout</button>
+                </form>
+                
+            {% else %}
+                <a href="{% url 'login' %}" class="nav-item nav-link">Login</a>
+            {% endif %}
+            </div>
+            <!-- <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                <input type="text" class="form-control" placeholder="Keyword">
+                <div class="input-group-append">
+                    <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                </div>
+            </div> -->
+            <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                <form action="{% url 'buscar_noticias' %}" method="get" style="display: flex; width: 100%;">
+                    <input type="text" name="q" class="form-control" placeholder="Keyword" value="{{ query|default:'' }}" id="search-input-footer" >
+                    <div class="input-group-append">
+                        <button type="submit" class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+<script>
+    document.getElementById('search-input-footer').addEventListener('input', function () {
+        const query = this.value.trim();
+        if (query === '') {
+            // Redirigir a la página de inicio
+            window.location.href = "{% url 'home' %}";
+        }
+    });
+</script>

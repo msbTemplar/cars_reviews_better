@@ -1,0 +1,860 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+   <!-- Top News Slider Start -->
+   <div class="container-fluid py-3">
+    <div class="container">
+        <div class="owl-carousel owl-carousel-2 carousel-item-3 position-relative">
+            <div class="d-flex">
+                <img src="{% static 'cars_reviews_better_app/img/Lexus-LS-500-6.webp' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="https://driving.ca/auto-news/2025-lexus-ls-canadian-pricing" target="_blank">Lexus announces 2025 LS pricing, starting at $110,239 in Canada</a>
+                </div>
+            </div>
+            <div class="d-flex">
+                <img src="{% static 'cars_reviews_better_app/img/2025-Mini-Counrtyman-SE-ALL4-GF-e1732287816587.webp' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="https://driving.ca/reviews/2025-mini-countryman-se-all4-ev-first-drive" target="_blank">2025 Mini Countryman is fast, fun to drive and miserly in the process | Reviews</a>
+                </div>
+            </div>
+            <div class="d-flex">
+                <img src="{% static 'cars_reviews_better_app/img/2024-L-A-auto-show-hits-misses.webp' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="https://driving.ca/auto-news/auto-shows/2024-los-angelese-auto-show-hits-misses" target="_blank">2024 Los Angeles Auto Show: Hits and Misses</a>
+                </div>
+            </div>
+            <div class="d-flex">
+                <img src="{% static 'cars_reviews_better_app/img/Jaguar-C-X75-1.webp' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="https://driving.ca/column/motor-mouth/motor-mouth-is-jaguar-going-to-make-it" target="_blank">Motor Mouth: Is Jaguar going to make it?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Top News Slider End -->
+
+
+<!-- Main News Slider Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
+                    <div class="position-relative overflow-hidden" style="height: 435px;">
+                        <img class="img-fluid h-100" src="{% static 'cars_reviews_better_app/img/1710331516.webp' %}" style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-1">
+                                <a class="text-white" href="">Technology</a>
+                                <span class="px-2 text-white">/</span>
+                                <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                            </div>
+                            <a class="h2 m-0 text-white font-weight-bold" href="https://www.coherentmi.com/blog/brazil-flexfuel-cars-a-pioneer-in-alternative-fuel-technologies-93" target="_blank">Brazil Flexfuel Cars: A Pioneer in Alternative Fuel Technologies</a>
+                        </div>
+                    </div>
+                    <div class="position-relative overflow-hidden" style="height: 435px;">
+                        <img class="img-fluid h-100" src="{% static 'cars_reviews_better_app/img/Brazilian-automotive-industry-scaled.jpg' %}" style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-1">
+                                <a class="text-white" href="">Technology</a>
+                                <span class="px-2 text-white">/</span>
+                                <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                            </div>
+                            <a class="h2 m-0 text-white font-weight-bold" href="https://latamfdi.com/brazilian-automotive-industry/" target="_blank">The Brazilian automotive industry: its history and evolution</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">Categories</h3>
+                    <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                </div>
+                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                    <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 183350.png' %}" style="object-fit: cover;">
+                    <a href="https://car-tech-france.fr" target="_blank" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        Business
+                    </a>
+                </div>
+                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                    <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/cat-500x80-2.jpg' %}" style="object-fit: cover;">
+                    <a href="{% url 'category_view' %}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        Technology
+                    </a>
+                </div>
+                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                    <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/Motor-Valley-2.jpg' %}" style="object-fit: cover;">
+                    <a href="https://vistatec.com/es/how-italys-motor-valley-has-shaped-the-global-automotive-industry/" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none" target="_blank">
+                        Entertainment
+                    </a>
+                </div>
+                <div class="position-relative overflow-hidden" style="height: 80px;">
+                    <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 183913.png' %}" style="object-fit: cover;">
+                    <a target="_blank" href="https://www.koenigsegg.com/home" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        Sports
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main News Slider End -->
+
+
+<!-- Featured News Slider Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+            <h3 class="m-0">Featured</h3>
+            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+        </div>
+        <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/km77_1.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.km77.com" target="_blank">Go to Km77</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/autopista_es_1.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.autopista.es" target="_blank">Go to autopista</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/autocar.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.autocar.co.uk" target="_blank">Go to autocar uk</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/motorpasion.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.motorpasion.com" target="_blank">Go to motorparsion</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/cars.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.cars.com" target="_blank">Go to Cars</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/insideeves.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://insideevs.com" target="_blank">Go to Insideeves</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/car_magazine.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.carmagazine.co.uk/" target="_blank">Go to Car Magazine UK</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/autonews.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.autonews.com" target="_blank">Go to Automotive News</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/Carscoops.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.carscoops.com" target="_blank">Go to Carscoops</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/coches_net.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.coches.net" target="_blank">Go to coches net</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/automobile_fr.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.automobile.fr" target="_blank">Go to automobile fr</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/asphalte_ch.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.asphalte.ch/news/fr/" target="_blank">Go to asphalte ch</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/hotcars.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.hotcars.com" target="_blank">Go to Hotcars</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/which_car.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.whichcar.com.au" target="_blank">Go to Which car</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/carsguide.jpg' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.carsguide.com.au" target="_blank">Go to Carsguide</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/drive.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.drive.com.au" target="_blank">Go to Drive</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/autoweek.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.autoweek.com" target="_blank">Go to Autoweek</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/topgear.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.topgear.es" target="_blank">Go to Topgear</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/car-and-driver.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.caranddriver.com/" target="_blank">Go to Car and driver</a>
+                </div>
+            </div>
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" src="{% static 'cars_reviews_better_app/img/car-and-driver.png' %}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="">Technology</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{ fecha_hora_actual }}</a>
+                    </div>
+                    <a class="h4 m-0 text-white" href="https://www.caranddriver.com/" target="_blank">Go to Car and driver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured News Slider End -->
+
+
+<!-- Category News Slider Start -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 py-3">
+                <div class="bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">Business</h3>
+                </div>
+                <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/rimac-nevera.webp' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://es.motor1.com/news/511397/rimac-nevera-hiperdeportivo-electrico-potencia/" target="_blank">Rimac Nevera: hiperdeportivo eléctrico con 1.940 CV</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/actualidad_412721427_130758892_1024x576.webp' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.elespanol.com/omicrono/20190710/supercoche-futurista-bentley-usa-ia-mayordomo/412710026_0.html" target="_blank">El supercoche futurista de Bentley que usa la IA como mayordomo</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 185425.png' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://es.ford.com/performance/gt/mk-iv/" target="_blank">Ford GT Mk IV 2023 | Ford Supercar | Ford.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-3">
+                <div class="bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">Technology</h3>
+                </div>
+                <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/renault-r5-prototype-la-nuova-elettrica-che-guarda-alla-tradizione.webp' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://es.motor1.com/news/466137/renault5-moderno-coche-electrico-clasico-urbano/" target="_blank">Bombazo! Vuelve Renault 5, un coche eléctrico e inspirado en el Turbo</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/08.webp' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.bobmaxeyford.com/2023-ford-bronco-detroit-mi" target="_blank">2023 Ford Bronco
+                                in Detroit, MI</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/EXR_CORVETTE_C8_Z06_SLIDER_2.jpg' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://speedvegas.com/race/chevrolet-corvette-c8-z06" target="_blank">Chevrolet Corvette C8 Z06</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Category News Slider End -->
+
+
+<!-- Category News Slider Start -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 py-3">
+                <div class="bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">Entertainment</h3>
+                </div>
+                <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Speedvegas-Black-Friday-1800x700-2024-V1.jpg' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://exoticsracing.com" target="_blank">Exotics Racing | Las Vegas Supercar Driving Experience</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 190859.png' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.porschedriving.com/los-angeles/" target="_blank">Porsche Experience Center Los Angeles</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 191047.png' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.texasmotorspeedway.com" target="_blank">Texas Motor Speedway</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-3">
+                <div class="bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">Sports</h3>
+                </div>
+                <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Downtown_Arts_Distric_Mural_cropped_d11966fb-040e-44b2-b14b-78c203078cf7.jpg' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.visitvancouverwa.com/car-shows/" target="_blank">Cruise-Ins and Car Shows in Vancouver, Washington</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/3069-classic-car-show-at-ski-to-sea-003-2800x900-2000.webp' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.bellingham.org/car-shows-in-whatcom-county-washington" target="_blank">Car Shows in Whatcom County, Washington</a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 191916.png' %}" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h4 m-0" href="https://www.capecobrahire.com" target="_blank">Welcome To Cape Cobra Hire | AC Cobra Car Hire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Category News Slider End -->
+
+
+<!-- News With Sidebar Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Popular</h3>
+                            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/american-car-show-2018-helsinki-by-wheelsbywovka-1.jpg' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h4" href="https://blog.wheelsbywovka.com/american-car-show-helsinki-2018/" target="_blank">American Car Show Helsinki 2018 - WHEELSBYWOVKA</a>
+                                <p class="m-0">Isompi kokemus. Messukeskus, Helsinki Original American Car Show by FHRA since 1978! · Photo by American Car Show on November 21, 2024. May be an image of · Photo ......</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/CCF24+kvadrat.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://en.classiccarhouse.dk/classiccarfestival" target="_blank">Classic Car Festival 2024</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 193429.png' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" target="_blank" href="https://cruisefire.com/en/events/spring-drive-2022/">CRUISEFIRE SPRING DRIVE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/san-francisco-ca-usa-san-francisco-international-auto-show.webp' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h4" target="_blank" href="https://www.tripster.com/travelguide/event/san-francisco-auto-show/">SF Auto Show: 2024 In-Depth Gearhead</a>
+                                <p class="m-0">The 63rd Annual International San Francisco Auto Show will be held from November 28 to December 1, 2024. This exciting event takes place at the Moscone Center, ......</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/OFCP_Flyer_original.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://www.sfcarpicnic.com" target="_blank">San Francisco Old Car Picnic
+                                    An Auto Events Production</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/1727284922must attend car shows.webp.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://www.amerifreight.net/information/16-must-attend-car-shows" target="_blank">16 Must-Attend U.S. Car Shows in 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3 pb-3">
+                    <a href=""><img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/ads-700x70_4.png' %}" alt=""></a>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Latest</h3>
+                            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 202838.png' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h4" href="https://www.imdb.com/title/tt5712554/?ref_=tt_mv_close" target="_blank">The Grand Tour</a>
+                                <p class="m-0">The Grand Tour is a British motoring television series, created by Jeremy Clarkson, Richard Hammond, James May, and Andy Wilman, for Amazon Prime Video, ......</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 203120.png' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjPk_qm2vWJAxW0hv0HHQqXKJQQFnoECD0QAQ&url=https%3A%2F%2Fwww.fifthgear.tv%2F&usg=AOvVaw3Qm162fYUzw5dXxUx-jZCW&opi=89978449" target="_blank">5th Gear</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 203600.png' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://www.imdb.com/title/tt4944090/?ref_=tt_mv_close" target="_blank">Jay Leno's Garage</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            <img class="img-fluid w-100" src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 204433.png' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h4" href="https://www.youtube.com/watch?v=qFeYL0EQvEo" target="_blank">DETROIT AUTORAMA 2024 Car Show Walk through see the Top Cars, Trucks and Motorcycles</a>
+                                <p class="m-0">Autorama 2024 (71st) In Detroit Michigan show coverage. Full show coverage of the coolest cars, trucks and Motorcycles #autorama #carshow #detroit...</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 204647.png' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://www.caranddriver.com/es/coches/planeta-motor/a62130928/hoonigan-bancarrota/" target="_blank">La marca más reconocible de Ken Block se declara en bancarrota: 1.200 millones de dólares de deuda</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'cars_reviews_better_app/img/Captura de pantalla 2024-11-24 204942.png' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>{{ fecha_hora_actual }}</span>
+                                </div>
+                                <a class="h6 m-0" href="https://housinamericancars.com" target="_blank">Concesionario oficial de Dodge, RAM, GMC, Cadillac, Chevrolet y Corvette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 pt-3 pt-lg-0">
+                <!-- Social Follow Start -->
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Follow Us</h3>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
+                            <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
+                            <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
+                            <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
+                            <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
+                            <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
+                            <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                </div>
+                <!-- Social Follow End -->
+                
+                <!-- Newsletter Start -->
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Newsletter</h3>
+                    </div>
+                    <div class="bg-light text-center p-4 mb-3">
+                        <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                        <!-- <div class="input-group" style="width: 100%;">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </div> -->
+                        <form action="{% url 'newsletter' %}" method="POST" class="mx-auto" style="max-width: 600px;">
+                            {% csrf_token %}
+                            <div class="input-group">
+                                <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                                <button class="btn btn-primary" type="submit">Sign Up</button>
+                            </div>
+                        </form>
+                        {% if messages %}
+                            <div class="mt-3 text-black">
+                                {% for message in messages %}
+                                    <p>{{ message }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        <small>Sit eirmod nonumy kasd eirmod</small>
+                    </div>
+                </div>
+                <!-- Newsletter End -->
+
+                <!-- Ads Start -->
+                <div class="mb-3 pb-3">
+                    <a href="https://www.carscoops.com/2024/11/see-the-coolest-cars-of-the-la-auto-show-right-here/" target="_blank"><img class="img-fluid" src="{% static 'cars_reviews_better_app/img/carscoops-la-openings-2048x1154.webp' %}" alt=""></a>
+                </div>
+                <!-- Ads End -->
+
+                <!-- Popular News Start -->
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Tranding</h3>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="{% static 'cars_reviews_better_app/img/g5t6yrv5tg5tg65tgyr6-2048x1152.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h6 m-0" href="https://www.carscoops.com/2024/11/which-gas-only-model-would-be-better-off-going-electric/" target="_blank">What Gas Car Would Absolutely Crush It As An EV?</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="{% static 'cars_reviews_better_app/img/Jeep-Gladiatoraa.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h6 m-0" href="https://www.carscoops.com/2024/11/jeep-sold-just-32000-gladiators-so-far-this-year-union-blames-4xe-plug-in-model-delay/" target="_blank">Jeep Gladiator Sales Are Tanking, Union Blames 4xe Plug-In Model Delay</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="{% static 'cars_reviews_better_app/img/03-copy-1024x576.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h6 m-0" href="https://www.carscoops.com/2024/11/porsche-restores-mulberry-green-993-turbo-with-nyc-design-house/" target="_blank">Porsche’s Latest 911 Restomod Turns Heads For All The Right Reasons</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="{% static 'cars_reviews_better_app/img/gmc-ford-ev-battery.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h6 m-0" target="_blank" href="https://insideevs.com/news/742022/battery-replacement-costs-fall-cheaper-than-fixing-engine/">Battery Replacement Costs Are Poised To Plunge: 'Cheaper Than Fixing An Engine'</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="{% static 'cars_reviews_better_app/img/rivian-r3x-introduced.webp' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ fecha_hora_actual }}</span>
+                            </div>
+                            <a class="h6 m-0" target="_blank" href="https://insideevs.com/features/726302/future-electric-cars/">Here Are The Upcoming Electric Cars For 2024, 2025 And 2026</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popular News End -->
+                
+                <!-- Tags Start -->
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Tags</h3>
+                    </div>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+                <!-- Tags End -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- News With Sidebar End -->
+
+{% endblock %}
+    

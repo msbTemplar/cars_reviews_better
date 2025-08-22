@@ -1,0 +1,716 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}NEWSCARS{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="{% block meta_description %} Free HTML Templates {% endblock %}" name="description">
+    
+    <!-- Favicon -->
+    <link href="{% static 'cars_reviews_better_app/img/favicon.ico' %}" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'cars_reviews_better_app/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.0/sweetalert2.css" integrity="sha512-ISg50yWmBgHf+gNWR8QPKuEzKzltcN5QOhu2CMTRtT+VXShvkhn1fn2I21dYo0Pz4362iyMNezNXIOpOsZkcWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'cars_reviews_better_app/css/style.css' %}" rel="stylesheet">
+</head>
+
+<style>
+    #cookie-banner {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+    #accept-cookies {
+        margin-left: 10px;
+    }
+    #cookie-banner {
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    }
+    #cookie-banner a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    #cookie-banner a:hover {
+        text-decoration: underline;
+    }
+    
+    #cookie-modal {
+        animation: fadeIn 0.5s;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    #cookie-modal div {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    #cookie-modal button:hover {
+        opacity: 0.9;
+    }
+
+    .scroll-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.scroll-buttons button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+#scrollTop {
+    background-color: #007bff; /* Color azul */
+}
+
+#scrollBottom {
+    background-color: #6c757d; /* Color gris */
+}
+
+</style>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Tranding</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Labore sit justo amet eos sed, et sanctus dolor diam eos</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block">
+                <!-- Monday, January 01, 2045 -->
+                {{ fecha_hora_actual }}
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span> Cars<span class="text-primary"> Multi Language</span> Sites</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="{% static 'cars_reviews_better_app/img/ads-700x70_4.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                    <a href="{% url 'category_view' %}" class="nav-item nav-link">Categories</a>
+                    <a href="{% url 'single_view' %}" class="nav-item nav-link">Single News</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Separated Last News</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="{% url 'motorpasion' %}" class="dropdown-item">Motorpasion</a>
+                            <a href="{% url 'carscoops' %}" class="dropdown-item">Carscoops</a>
+                            <a href="{% url 'insideevs' %}" class="dropdown-item">Insideevs</a>
+                            <a href="{% url 'carmagazine' %}" class="dropdown-item">Carmagazine</a>
+                            <a href="{% url 'autocar' %}" class="dropdown-item">Autocar</a>
+                            <a href="{% url 'autonews' %}" class="dropdown-item">Autonews</a>
+                        </div>
+                    </div>
+                    <a href="{% url 'lista_noticias' %}" class="nav-item nav-link">Last News</a>
+                    <a href="{% url 'noticias_imdb' %}" class="nav-item nav-link">Noticias IMDB</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    {% if user.is_authenticated %}
+                <a href="{% url 'cars_reviews_admin' %}" class="nav-item nav-link">Cars Reviews Admin</a>
+                
+                <button class="btn btn-light" id="populateNoticias">Ejecutar Scraping</button>
+                <a href="" class="nav-item nav-link">All the options</a>
+                    <!--<a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>-->
+                    <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-light mt-3">Logout</button>
+                    </form>
+                <a href="{% url 'admin:login' %}" class="nav-item nav-link" target="_blank">Ir al panel de administración</a>
+                    
+                {% else %}
+                    <a href="{% url 'login' %}" class="nav-item nav-link">Login</a>
+                {% endif %}
+                </div>
+                <!-- <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div> -->
+
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <form action="{% url 'buscar_noticias' %}" method="get" style="display: flex; width: 100%;">
+                        <input type="text" name="q" class="form-control" placeholder="Keyword" value="{{ query|default:'' }}" id="search-input" >
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+        
+    </div>
+    <!-- Navbar End -->
+     <center>
+        <!-- <div class="container-fluid py-3" id="loading" style="display: none;">
+            <p>Procesando... Por favor espera.</p>
+            <div class="spinner"></div>
+        </div> -->
+
+        <div id="progressContainer" style="display: none;">
+            <p>Procesando: <span id="progressText">0%</span></p>
+            <progress id="progressBar" max="100" value="0"></progress>
+        </div>
+
+    </center>
+{% block content %}
+
+
+
+{% endblock %}
+    
+ 
+
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                </a>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categories</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Tags</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
+                    <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center">
+            &copy; <a class="font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. 
+			
+			<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+			Designed by <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    {% if not request.COOKIES.cookie_consent %}
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #333; color: white; text-align: center; padding: 20px; z-index: 1000;">
+    <p>
+        Este sitio web utiliza cookies para personalizar contenido, analizar el tráfico y ofrecer funciones sociales. 
+        Lea más en nuestra <a href="{% url 'privacy_policy' %}" style="color: #4CAF50; text-decoration: underline;">Política de Privacidad</a>.
+    </p>
+    <div style="margin-top: 10px;">
+        <button id="accept-all-cookies" style="background: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-right: 10px;">
+            Aceptar todas
+        </button>
+        <button id="reject-all-cookies" style="background: #f44336; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-right: 10px;">
+            Rechazar todas
+        </button>
+        <button id="configure-cookies" style="background: #2196F3; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+            Configurar cookies
+        </button>
+    </div>
+</div>
+{% endif %}
+    
+<!-- <div id="cookie-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 2000;">
+    <div style="position: relative; width: 90%; max-width: 500px; margin: 10% auto; background: white; padding: 20px; border-radius: 8px;">
+        <h3>Configurar Cookies</h3>
+        <p>Selecciona las categorías de cookies que deseas habilitar:</p>
+        <form id="cookie-settings-form">
+            <label>
+                <input type="checkbox" name="essential" checked disabled>
+                Cookies esenciales (siempre habilitadas)
+            </label><br>
+            <label>
+                <input type="checkbox" name="analytics">
+                Cookies analíticas
+            </label><br>
+            <label>
+                <input type="checkbox" name="marketing">
+                Cookies de marketing
+            </label><br>
+            <label>
+                <input type="checkbox" name="preferences">
+                Cookies de preferencias
+            </label><br>
+            <div style="margin-top: 15px;">
+                <button type="button" id="save-cookie-settings" style="background: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-right: 10px;">
+                    Guardar configuración
+                </button>
+                <button type="button" id="close-cookie-modal" style="background: #f44336; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+</div> -->
+    <div id="cookie-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 2000; align-items: center; justify-content: center;">
+    <div style="position: relative; width: 90%; max-width: 500px; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <h3 style="margin: 0 0 15px; font-size: 1.5rem; color: #333; text-align: center;">Configurar Cookies</h3>
+        <p style="font-size: 1rem; color: #555; text-align: center; margin-bottom: 20px;">
+            Selecciona las categorías de cookies que deseas habilitar:
+        </p>
+        <form id="cookie-settings-form" style="display: flex; flex-direction: column; gap: 15px;">
+            <label style="display: flex; align-items: center; gap: 10px; font-size: 1rem; color: #333;">
+                <input type="checkbox" name="essential" checked disabled>
+                <span>Cookies esenciales (siempre habilitadas)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 10px; font-size: 1rem; color: #333;">
+                <input type="checkbox" name="analytics">
+                <span>Cookies analíticas</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 10px; font-size: 1rem; color: #333;">
+                <input type="checkbox" name="marketing">
+                <span>Cookies de marketing</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 10px; font-size: 1rem; color: #333;">
+                <input type="checkbox" name="preferences">
+                <span>Cookies de preferencias</span>
+            </label>
+            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <button type="button" id="save-cookie-settings" style="background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">
+                    Guardar configuración
+                </button>
+                <button type="button" id="close-cookie-modal" style="background: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+   <!-- Botón para desplazarse al inicio y al final -->
+   <div class="scroll-buttons">
+    <button id="scrollTop" class="btn btn-primary">↑</button>
+    <button id="scrollBottom" class="btn btn-secondary">↓</button>
+   </div>
+    
+    
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'cars_reviews_better_app/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'cars_reviews_better_app/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'cars_reviews_better_app/mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'cars_reviews_better_app/mail/contact.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.0/sweetalert2.min.js" integrity="sha512-iTSP2McqQzzin4TwBzVD2vGe2cKB9VxC6zouXB3J7enM/dblekPHIsJBMm0YGrZnyq1sTv/dGwo7oLY4nuRPGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'cars_reviews_better_app/js/main.js' %}"></script>
+
+    <script>
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            fetch("{% url 'set_cookie_consent' %}", {method: 'GET'})
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'ok') {
+                        document.getElementById('cookie-banner').style.display = 'none';
+                    }
+                });
+        });
+    </script>
+
+    <script>
+        document.getElementById('accept-all-cookies').addEventListener('click', function() {
+            setCookie('cookie_consent', 'all', 365);
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+    
+        document.getElementById('reject-all-cookies').addEventListener('click', function() {
+            setCookie('cookie_consent', 'none', 365);
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+    
+        document.getElementById('configure-cookies').addEventListener('click', function() {
+            //alert('Aquí podrías mostrar un modal o redirigir a una página para configurar cookies por categorías.');
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, Configure cookies!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Aquí se muestra el segundo SweetAlert para informar sobre la eliminación
+                    Swal.fire({
+                        title: "Cookies Configurations!",
+                        text: "Your are going to configurate your cookies .",
+                        icon: "success",
+                    }).then((isConfirmed) => {
+                        // Verificar si el usuario ha confirmado el segundo SweetAlert
+                        if (isConfirmed) {
+                            console.log("el id es : " + 0);
+                            // Aquí redireccionamos al usuario para eliminar el registro
+                            //window.location.href = `/eliminar_dentists_image/${id}`; // Asegúrate de que esta URL sea correcta
+                            document.getElementById('cookie-modal').style.display = 'block';
+                        } else {
+                            Swal.fire("Cancelled", "Your cookies configurations has not been set yet :)", "error");
+                        }
+                    });
+                }
+            });
+            //document.getElementById('cookie-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-cookie-modal').addEventListener('click', function() {
+            document.getElementById('cookie-modal').style.display = 'none';
+        });
+    
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        document.getElementById('save-cookie-settings').addEventListener('click', function() {
+            const form = document.getElementById('cookie-settings-form');
+            const settings = {
+                analytics: form.elements['analytics'].checked,
+                marketing: form.elements['marketing'].checked,
+                preferences: form.elements['preferences'].checked,
+            };
+            setCookie('cookie_consent_settings', JSON.stringify(settings), 365);
+        
+            // Cierra el modal
+            document.getElementById('cookie-modal').style.display = 'none';
+
+            // Oculta el banner
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+        
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        
+        const cookieSettings = JSON.parse(getCookie('cookie_consent_settings') || '{}');
+        
+        if (cookieSettings.analytics) {
+            console.log('Activando cookies analíticas...');
+            // Aquí puedes cargar tus scripts de Google Analytics, por ejemplo.
+        }
+        
+        if (cookieSettings.marketing) {
+            console.log('Activando cookies de marketing...');
+            // Aquí puedes cargar scripts relacionados con anuncios.
+        }
+        
+        if (cookieSettings.preferences) {
+            console.log('Activando cookies de preferencias...');
+            // Aquí puedes activar cookies personalizadas para el usuario.
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const consentSettings = getCookie('cookie_consent_settings');
+            if (consentSettings) {
+                // Si ya existen configuraciones de cookies, oculta el banner
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        });
+        
+        
+    </script>
+    <script>
+        document.getElementById('search-input').addEventListener('input', function () {
+            const query = this.value.trim();
+            if (query === '') {
+                // Redirigir a la página de inicio
+                window.location.href = "{% url 'home' %}";
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('scroll', function () {
+            const scrollButtons = document.getElementById('scroll-buttons');
+            const offset = window.scrollY; // Obtiene el desplazamiento vertical actual
+            scrollButtons.style.top = 100 + offset + 'px'; // Ajusta la posición según el desplazamiento
+        });
+        
+        document.getElementById('scrollTop').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        document.getElementById('scrollBottom').addEventListener('click', function () {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+    <!-- <script>
+        document.getElementById('populateNoticias').addEventListener('click', function() {
+            fetch('/populate-noticias/', {
+                method: 'GET',
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(data.message);
+                } else if (data.error) {
+                    alert("Error: " + data.error);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script> -->
+
+
+    <!-- <script>
+        document.getElementById('populateNoticias').addEventListener('click', function() {
+            // Mostrar el indicador de carga
+            document.getElementById('loading').style.display = 'block';
+        
+            fetch('/populate-noticias/', {
+                method: 'GET',
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Ocultar el indicador de carga
+                document.getElementById('loading').style.display = 'none';
+        
+                if (data.message) {
+                    alert(data.message);
+                } else if (data.error) {
+                    alert("Error: " + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('loading').style.display = 'none'; // Ocultar también en caso de error
+            });
+        });
+        </script> -->
+
+    <script>
+    document.getElementById('populateNoticias').addEventListener('click', function() {
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        const progressContainer = document.getElementById('progressContainer');
+    
+        // Mostrar la barra de progreso
+        progressContainer.style.display = 'block';
+    
+        // Simulación de progreso
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += 5; // Incrementa en 5% cada vez (ajusta según sea necesario)
+            progressBar.value = progress;
+            progressText.textContent = `${progress}%`;
+    
+            if (progress >= 100) {
+                clearInterval(interval);
+            }
+        }, 15000); // Simulación: actualiza cada 3 segundos (ajusta según sea necesario)
+
+        /* Swal.fire({
+        title: 'Ejecutando scraping...',
+        text: 'Por favor espera mientras se completan las tareas.',
+        icon: 'info',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => {
+            Swal.showLoading(); // Muestra el indicador de carga de SweetAlert2
+        }
+        }); */
+
+        const steps = ['1', '2', '3', '4', '5','6', '7', '8', '9', '10', '11', '12', '13', '14'];
+
+        const swalQueue = Swal.mixin({
+            progressSteps: steps,
+            confirmButtonText: 'Siguiente',
+            showCancelButton: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false
+        });
+
+        (async () => {
+            for (let i = 0; i < steps.length; i++) {
+        // Muestra cada paso automáticamente con un pequeño delay
+                await swalQueue.fire({
+                    title: `Paso ${steps[i]}`,
+                    text: `Procesando parte ${steps[i]} de ${steps.length}...`,
+                    currentProgressStep: i,
+                    timer: 25000 // Tiempo en milisegundos antes de avanzar al siguiente paso
+                });
+            }
+            // Swal.fire({
+            //     title: 'Proceso completado',
+            //     icon: 'success'
+            // }).then(() => {
+            //     // Redirigir al home
+            //     window.location.href = '/';
+            // });
+        })();
+
+    
+        fetch('/populate-noticias/', {
+            method: 'GET',
+        })
+        .then(response => response.json())
+        .then(data => {
+            clearInterval(interval); // Detener la simulación
+            progressBar.value = 100; // Completar la barra de progreso
+            progressText.textContent = '100%';
+            //alert(data.message || 'Proceso completado.');
+            if (data.message) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Proceso completado',
+                    text: data.message,
+                    timer: 5000, // 5 segundos
+                    timerProgressBar: true,
+                    confirmButtonText: 'Cerrar'
+                }).then(() => {
+                // Redirigir al home
+                window.location.href = '/';
+                });
+            } else if (data.error) {
+            // Mostrar alerta de error con SweetAlert2
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: data.error,
+                    confirmButtonText: 'Cerrar'
+                });
+            }
+        })
+        .catch(error => {
+            clearInterval(interval);
+            //alert("Error: " + error.message);
+            Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Hubo un problema con el servidor.',
+            confirmButtonText: 'Cerrar'
+            });
+        });
+    });
+    </script>
+        
+        <style>
+        /* Estilo del spinner */
+        .spinner {
+            border: 4px solid #f3f3f3; /* Color de fondo */
+            border-top: 4px solid #3498db; /* Color de la animación */
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        </style>    
+    
+</body>
+
+</html>
