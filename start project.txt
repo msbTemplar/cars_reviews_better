@@ -54,6 +54,13 @@ de1503722660424299362c7556b69ee1e8d2fd4edf4
 pip install python-dotenv
 
 
+ p = Paginator(movies, 3)
+    page = request.GET.get('page')
+    todas_movies = p.get_page(page)
+    nums = "a" * todas_movies.paginator.num_pages
+    nums = range(1, todas_movies.paginator.num_pages + 1)  # Rango dinámico para las páginas
+
+
 
 node -v
 
