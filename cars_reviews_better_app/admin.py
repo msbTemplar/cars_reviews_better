@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Comment, Newsletter, ContactMessage,Noticia,NoticiaDiferente,CommentMotorpasion, CommentAutocar, CommentAutonews, CommentCarmagazine,CommentCarscoops,CommentInsideevs
+from .models import Comment, Newsletter, ContactMessage,Noticia,NoticiaDiferente,CommentMotorpasion, CommentAutocar, CommentAutonews, CommentCarmagazine,CommentCarscoops,CommentInsideevs, FeaturedNews
 
 
 # Register your models here.
@@ -20,3 +20,9 @@ class NoticiaAdmin(admin.ModelAdmin):
 @admin.register(NoticiaDiferente)
 class NoticiaDiferenteAdmin(admin.ModelAdmin):
     list_display = ('titulo', 'link', 'img_url')
+
+@admin.register(FeaturedNews)
+class FeaturedNewsAdmin(admin.ModelAdmin):
+    list_display = ("title", "category", "date", "link")
+    list_filter = ("category", "date")
+    search_fields = ("title",)

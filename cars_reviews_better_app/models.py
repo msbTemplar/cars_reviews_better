@@ -175,3 +175,22 @@ class NoticiaDiferente(models.Model):
         return self.titulo
     
 
+class FeaturedNews(models.Model):
+    CATEGORY_CHOICES = [
+        ("Technology", "Technology"),
+        ("Sports", "Sports"),
+        ("Entertainment", "Entertainment"),
+        ("Other", "Other"),
+    ]
+
+    title = models.CharField(max_length=255)
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, default="Other")
+    date = models.DateField()
+    image = models.ImageField(upload_to="featured_news/")
+    link = models.URLField(blank=True, null=True)
+    fecha_creacion = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)  # Permitir activar o desactivar la suscripción
+    
+
+    def __str__(self):
+        return self.title

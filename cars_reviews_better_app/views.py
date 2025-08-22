@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from .forms import CommentForm,NewsletterForm,ContactMessageForm,CommentMotorpasionForm, CommentCarscoopsForm, CommentAutonewsForm, CommentAutocarForm, CommentCarmagazineForm, CommentInsideevsForm,CommentBuscarNoticiasForm, CommentIMDBForm
-from .models import Comment,Noticia, NoticiaDiferente,CommentMotorpasion,CommentCarscoops, CommentInsideevs, CommentAutocar, CommentAutonews, CommentCarmagazine,CommentBuscarNoticias, CommentIMDB
+from .models import Comment,Noticia, NoticiaDiferente,CommentMotorpasion,CommentCarscoops, CommentInsideevs, CommentAutocar, CommentAutonews, CommentCarmagazine,CommentBuscarNoticias, CommentIMDB, FeaturedNews
 from django.http import JsonResponse
 import time
 from django.db.models import Q
@@ -18,6 +18,11 @@ from django.conf import settings
 
 
 # Create your views here.
+
+
+def featured_slider(request):
+    featured = FeaturedNews.objects.order_by("-date")[:10]  # últimas 10 noticias
+    return render(request, "cars_reviews_better_app/todos_mis_proyectos.html", {"featured": featured})
 
 def todos_mis_proyectos(request):
     fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
