@@ -160,10 +160,10 @@
                     <a href="{% url 'noticias_imdb_web' %}" class="nav-item nav-link">Noticias IMDB Web</a>
                     <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                     {% if user.is_authenticated %}
-                <a href="{% url 'cars_reviews_admin' %}" class="nav-item nav-link">Cars Reviews Admin</a>
+                <a href="{% url 'admin:login' %}" target="_blank" class="nav-item nav-link">Cars Reviews Admin</a>
                 
                 <button class="btn btn-light" id="populateNoticias">Ejecutar Scraping</button>
-                <a href="" class="nav-item nav-link">All the options</a>
+                <a href="{% url 'lista_noticias' %}" class="nav-item nav-link">All the options</a>
                     <!--<a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>-->
                     <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: inline;">
                         {% csrf_token %}
