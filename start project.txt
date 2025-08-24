@@ -1,33 +1,35 @@
-mipropiatienda.pythonanywhere.com
+https://mipropiatienda.pythonanywhere.com
 
-GestionAsmae.pythonanywhere.com
+https://GestionAsmae.pythonanywhere.com
 
-almanzah.pythonanywhere.com
+https://almanzah.pythonanywhere.com
 
-controlhorario.pythonanywhere.com
+https://controlhorario.pythonanywhere.com
 
-filipmorris34.pythonanywhere.com
+https://filipmorris34.pythonanywhere.com
 
-gestionimmeuble35.pythonanywhere.com
+https://gestionimmeuble35.pythonanywhere.com
 
-gestionimmeuble77.pythonanywhere.com
+https://gestionimmeuble77.pythonanywhere.com
 
-morgan32.pythonanywhere.com
+https://morgan32.pythonanywhere.com
 
-simonTemplarCoin.pythonanywhere.com
+https://simonTemplarCoin.pythonanywhere.com
 
-simonTiendaWeb.pythonanywhere.com
+https://simonTiendaWeb.pythonanywhere.com
 
-bestmosquewebever.pythonanywhere.com
+https://bestmosquewebever.pythonanywhere.com
 
-filipmorris43.pythonanywhere.com
+https://filipmorris43.pythonanywhere.com
 
-simonTemplar45.pythonanywhere.com
+https://simonTemplar45.pythonanywhere.com
 
 
-simonTemplar.pythonanywhere.com
+https://simonTemplar.pythonanywhere.com
 
 minuevocoche.pythonanywhere.com
+
+https://minuevocoche.pythonanywhere.com/contact.html
 
 echo "# cars_reviews_better" >> README.md
 git init

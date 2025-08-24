@@ -19,8 +19,8 @@ class Command(BaseCommand):
         obtener_noticias_scraping_carmagazine_co_uk()
         obtener_noticias_scraping_autocar_co_uk()
         obtener_noticias_scraping_autonews()
-
-
+        
+        
         
         self.stdout.write(self.style.SUCCESS('Proceso completado: Noticias guardadas correctamente.'))
 
