@@ -180,10 +180,10 @@ def motorpasion_view(request):
     #         )
     noticias = NoticiaDiferente.objects.filter(link__icontains='motorpasion').order_by('-fecha_creacion')
     print(f"Noticias encontradas: {noticias.count()}")  # Debe imprimir 18
-    for noticia in noticias:
-        print(f"Título: {noticia.titulo}")
-        print(f"Link: {noticia.link}")
-        print(f"Imagen: {noticia.img_url}")
+    # for noticia in noticias:
+    #     print(f"Título: {noticia.titulo}")
+    #     print(f"Link: {noticia.link}")
+    #     print(f"Imagen: {noticia.img_url}")
     
     fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
     if request.method == 'POST':
