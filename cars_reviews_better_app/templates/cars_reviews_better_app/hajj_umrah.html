@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="container">
+        <nav class="breadcrumb bg-transparent m-0 p-0">
+            <a class="breadcrumb-item" href="{% url 'home' %}">Home</a>
+            <span class="breadcrumb-item active">Agencias Umrah & Hajj</span>
+        </nav>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Agencias Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="bg-light py-2 px-4 mb-3">
+            <h3 class="m-0">Agencias de viajes (España y Marruecos)</h3>
+        </div>
+
+        <!-- Filtros de Búsqueda -->
+        <div class="d-flex justify-content-center mb-4">
+            <a href="?pais=España" class="btn mx-2 rounded-pill shadow-sm {% if request.GET.pais == 'España' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                España ({{ conteo_agencias.España }})
+            </a>
+            <a href="?pais=Marruecos" class="btn mx-2 rounded-pill shadow-sm {% if request.GET.pais == 'Marruecos' %}btn-success{% else %}btn-outline-success{% endif %}">
+                Marruecos ({{ conteo_agencias.Marruecos }})
+            </a>
+            <a href="." class="btn mx-2 rounded-pill shadow-sm {% if not request.GET.pais %}btn-warning{% else %}btn-outline-secondary{% endif %}">
+                Todas ({{ conteo_agencias.Todas }})
+            </a>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            {% for agencia in agencias %}
+                <div class="col-md-3 m-3">
+                    <div class="card shadow-sm" style="width: 18rem; border-radius: 12px;">
+                        <!-- Logo o imagen -->
+                        {% if agencia.logo %}
+                            <img src="{{ agencia.logo }}" class="card-img-top" alt="{{ agencia.nombre }}">
+                        {% else %}
+                            <img src="{% static 'cars_reviews_better_app/img/default_agencia.jpg' %}" class="card-img-top" alt="{{ agencia.nombre }}">
+                        {% endif %}
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">{{ agencia.nombre }}</h5>
+                            <p class="card-text"><strong>País:</strong> {{ agencia.pais }}</p>
+                                                        <a href="{{ agencia.web }}" target="_blank" class="btn w-100 rounded-pill {% if 'España' in agencia.pais %}btn-primary{% elif 'Marruecos' in agencia.pais %}btn-success{% else %}btn-warning{% endif %}">Visitar Web</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12 text-center">
+                    <p>No se encontraron agencias para la búsqueda.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Agencias End -->
+
+{% include 'footer_nav_bar.html' %}
+
+{% endblock %}

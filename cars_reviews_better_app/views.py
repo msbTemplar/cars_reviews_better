@@ -432,6 +432,66 @@ def home_imdb_web(request):
     return render(request, "cars_reviews_better_app/noticias.html", context)
 
 
+def hajj_umrah_view(request):
+    agencias = [
+        {"nombre": "Bayt Al Fajr Travel", "pais": "España", "web": "https://alfajrtravel.com"},
+        {"nombre": "UmraSpain", "pais": "España", "web": "https://umraspain.com"},
+        {"nombre": "Rawahel Travel Spain", "pais": "España", "web": "https://rawahelspain.com"},
+        {"nombre": "HajjSpain", "pais": "España", "web": "https://hajjspain.com/en"},
+        {"nombre": "Almisk Travel", "pais": "España/Europa", "web": "https://umrah-desde.com"},
+        {"nombre": "RIHAB TRAVEL", "pais": "España", "web": "https://www.cylex.es/madrid/rihab-travel-s-l---hajj-y-umrah-desde-espa%C3%B1a---madrid--barcelona--m%C3%A1laga--13541763.html"},
+        {"nombre": "Meca Travel S.L.U", "pais": "España", "web": "https://mecatravel.info"},
+        {"nombre": "Rifada Travel", "pais": "Marruecos/España", "web": "https://rifadatravel.com"},
+        {"nombre": "HajjMaroc", "pais": "Marruecos", "web": "https://hajjmaroc.com/es"},
+        {"nombre": "Nour Viajes y Eventos", "pais": "España/Marruecos", "web": "https://nourviajesyeventos.com"},
+        # ✅ Nuevas agencias añadidas
+        {"nombre": "Umra Y Hajj S.L", "pais": "Ceuta (España)", "web": "https://empresite.eleconomista.es/UMRA-HAJJ.html"},
+        {"nombre": "Rihab Travel Melilla Umrah & Hajj", "pais": "Melilla (España)", "web": "https://laromerosa.es/rihab-travel-melilla-umrah-hajj/"},
+        {"nombre": "Alburak Travel", "pais": "España", "web": "https://alburaktravel.com"},
+        {"nombre": "Turismo Marruecos", "pais": "España/Marruecos", "web": "https://viajesmarruecos.com/nosotros/"},
+        {"nombre": "Bint Batuta Travel", "pais": "España", "web": "https://bintbatutatravel.com"},
+        # ✅ Nuevas agencias de Hajj y Umrah añadidas
+        {"nombre": "Bizana Viajes", "pais": "España", "web": "https://bizanaviajes.es"},
+        {"nombre": "Adyafa Travel", "pais": "España", "web": "https://adyafatravel.com"},
+        {"nombre": "Mansiki Travel", "pais": "Marruecos", "web": "https://manasiki.ma/es/"},
+        # ✅ Nuevas agencias encontradas
+        {"nombre": "Malik Travel", "pais": "España", "web": "https://www.maliktravel.net"},
+        {"nombre": "Agora Travel", "pais": "España", "web": "https://agoratravel.net"},
+        {"nombre": "Go Mon Tours", "pais": "España", "web": "https://gomontours.com"},
+        {"nombre": "Oubadi Travel", "pais": "Marruecos", "web": "https://oubaditravel.com"},
+        # ✅ Agencias recién añadidas
+        {"nombre": "Haima Experience", "pais": "Marruecos", "web": "https://www.haimaexperience.com"},
+        {"nombre": "Xaluca Tours", "pais": "Marruecos", "web": "https://xalucatours.com"},
+        {"nombre": "Abdou Voyages", "pais": "Marruecos", "web": "https://manasiki.ma"},
+        {"nombre": "Oubadi Travel", "pais": "Marruecos", "web": "https://oubaditravel.com"},
+        {"nombre": "Dallah Viajes", "pais": "España", "web": "https://www.dallahviajes.com"},
+        # ✅ Nuevas agencias añadidas
+        {"nombre": "Hajjea", "pais": "España", "web": "https://hajjea.es"},
+        {"nombre": "Viajes A Mecca", "pais": "España", "web": "https://viajesamecca.com"},
+        {"nombre": "Umra Europa", "pais": "España/Europa", "web": "https://umraeuropa.es"},
+        {"nombre": "Al-Andalus Viajes", "pais": "España", "web": "https://alandalusviajes.com"},
+        {"nombre": "Viajes Al-Aqsa", "pais": "España", "web": "https://viajesalaqsa.com"},
+        {"nombre": "Bakkah Travel", "pais": "España", "web": "https://bakkah.travel"},
+        {"nombre": "Masar Travel", "pais": "Marruecos", "web": "https://masartravel.ma"},
+        {"nombre": "Haj.ma", "pais": "Marruecos", "web": "https://haj.ma"},
+    ]
+    # Calcular el número de agencias por país
+    conteo_agencias = {
+        'España': sum(1 for a in agencias if 'España' in a['pais']),
+        'Marruecos': sum(1 for a in agencias if 'Marruecos' in a['pais']),
+        'Todas': len(agencias)
+    }
+    
+    pais_filtro = request.GET.get('pais', None)
+
+    if pais_filtro:
+        agencias = [agencia for agencia in agencias if pais_filtro.lower() in agencia['pais'].lower()]
+        
+    return render(request, "cars_reviews_better_app/hajj_umrah.html", {"agencias": agencias, "conteo_agencias": conteo_agencias})
+
+
+
+
 
 def home_imdb_web1(request):
     movies = []

@@ -44,4 +44,6 @@ urlpatterns = [
     path('populate-noticias/', views.populate_noticias, name='populate_noticias'),
     path('noticias_imdb_web/', views.home_imdb_web, name='noticias_imdb_web'),
     path("featured_slider/", views.featured_slider, name="featured_slider"),
+    path('hajj_umrah_view/', views.hajj_umrah_view, name='hajj_umrah_view'),
+    
 ]
