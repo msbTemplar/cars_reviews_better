@@ -21,7 +21,7 @@ from django.conf import settings
 
 
 def featured_slider(request):
-    featured = FeaturedNews.objects.order_by("-date")[:10]  # últimas 10 noticias
+    featured = FeaturedNews.objects.order_by("-date")[:30]  # últimas 10 noticias
     return render(request, "cars_reviews_better_app/todos_mis_proyectos.html", {"featured": featured})
 
 def todos_mis_proyectos(request):
