@@ -153,12 +153,14 @@
                             <a href="{% url 'carmagazine' %}" class="dropdown-item">Carmagazine</a>
                             <a href="{% url 'autocar' %}" class="dropdown-item">Autocar</a>
                             <a href="{% url 'autonews' %}" class="dropdown-item">Autonews</a>
+                            <a href="{% url 'topgear' %}" class="dropdown-item">Top Gear</a>
+                            <a href="{% url 'caranddriver' %}" class="dropdown-item">Car and Driver</a>
                         </div>
                     </div>
                     <a href="{% url 'lista_noticias' %}" class="nav-item nav-link">Last News</a>
                     <!-- <a href="{% url 'noticias_imdb' %}" class="nav-item nav-link">Noticias IMDB</a> -->
                     {% if DEBUG %}
-                    <a href="{% url 'noticias_imdb' %}" class="nav-item nav-link">Noticias IMDB</a>
+                    <a hidden href="{% url 'noticias_imdb' %}" class="nav-item nav-link">Noticias IMDB</a>
                     {% else %}
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1" aria-disabled="true">Noticias IMDB</a>
                     {% endif %}

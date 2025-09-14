@@ -1408,7 +1408,127 @@ def obtener_noticias_scraping_autonews():
         print(f"Ocurrió un error inesperado durante el scraping: {e}")
         
         
-        
+
+def obtener_noticias_scraping_topgear():
+    url = "https://www.topgear.es/"
+    noticias_guardadas = 0
+    noticias_omitidas = 0
+
+    scraperapi_key = getattr(settings, 'SCRAPERAPI_KEY', None)
+
+    try:
+        if scraperapi_key:
+            print("Usando ScraperAPI para TopGear...")
+            payload = {'api_key': scraperapi_key, 'url': url, 'render': 'true'}
+            response = requests.get('https://api.scraperapi.com/', params=payload)
+        else:
+            print("No se encontró la clave de ScraperAPI, haciendo petición directa a TopGear...")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/114.0.0.0 Safari/537.36",
+            }
+            response = requests.get(url, headers=headers)
+
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Buscar todos los artículos
+        articulos = soup.find_all('article', class_='teaser_teaser__gSQCt')
+
+        for articulo in articulos:
+            # Imagen
+            img_tag = articulo.find('img')
+            img_url = img_tag['src'] if img_tag and img_tag.has_attr('src') else "https://www.topgear.es/themes/custom/topgear/img/logo.png"
+
+            # Título y enlace
+            h3_tag = articulo.find('h3')
+            a_tag = h3_tag.find('a') if h3_tag else None
+            titulo = a_tag.get_text(strip=True) if a_tag else "Sin título"
+            enlace = a_tag['href'] if a_tag and a_tag.has_attr('href') else None
+
+            # Guardar en DB
+            try:
+                _, created = NoticiaDiferente.objects.get_or_create(
+                    titulo=titulo,
+                    link=enlace,
+                    img_url=img_url
+                )
+                if created:
+                    noticias_guardadas += 1
+                else:
+                    noticias_omitidas += 1
+            except IntegrityError:
+                noticias_omitidas += 1
+
+        print(f"Noticias TopGear: {len(articulos)} | Guardadas: {noticias_guardadas} | Omitidas: {noticias_omitidas}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error de conexión: {e}")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado durante el scraping: {e}")
+
+
+
+def obtener_noticias_scraping_caranddriver():
+    url = "https://www.caranddriver.com/"
+    noticias_guardadas = 0
+    noticias_omitidas = 0
+
+    scraperapi_key = getattr(settings, 'SCRAPERAPI_KEY', None)
+
+    try:
+        if scraperapi_key:
+            print("Usando ScraperAPI para Car and Driver...")
+            payload = {'api_key': scraperapi_key, 'url': url, 'render': 'true'}
+            response = requests.get('https://api.scraperapi.com/', params=payload)
+        else:
+            print("No se encontró la clave de ScraperAPI, haciendo petición directa a Car and Driver...")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/114.0.0.0 Safari/537.36",
+            }
+            response = requests.get(url, headers=headers)
+
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Buscar bloques de noticia
+        articulos = soup.find_all('div', class_='css-1ch4inn')
+
+        for articulo in articulos:
+            titulo = articulo.get("data-vars-ga-call-to-action", "Sin título")
+            enlace = articulo.get("data-vars-ga-outbound-link")
+            img_tag = articulo.find("img")
+            img_url = img_tag["src"] if img_tag and img_tag.has_attr("src") else "https://www.caranddriver.com/favicon.ico"
+
+            if not enlace:
+                continue  # Si no hay enlace, se omite
+
+            # Guardar en DB
+            try:
+                _, created = NoticiaDiferente.objects.get_or_create(
+                    titulo=titulo,
+                    link=enlace,
+                    img_url=img_url
+                )
+                if created:
+                    noticias_guardadas += 1
+                else:
+                    noticias_omitidas += 1
+            except IntegrityError:
+                noticias_omitidas += 1
+
+        print(f"Noticias CarAndDriver: {len(articulos)} | Guardadas: {noticias_guardadas} | Omitidas: {noticias_omitidas}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error de conexión: {e}")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado durante el scraping: {e}")
+
+
+
 
 
 def obtener_noticias_scraping_autonews_sinkey():

@@ -280,6 +280,43 @@ def autonews_view(request):
     context = {'fecha_hora_actual': fecha_hora_actual, 'comments':comments, 'form':form, 'noticias': noticias}
     return render(request, 'cars_reviews_better_app/autonews.html', context)
 
+
+def topgear_view(request):
+    #noticias = obtener_noticias_scraping_autonews()
+    noticias = NoticiaDiferente.objects.filter(link__icontains='topgear').order_by('-fecha_creacion')
+    fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
+    if request.method == 'POST':
+        form = CommentAutonewsForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('topgear')  # Cambia 'comments' por el nombre de tu URL
+    else:
+        form = CommentAutonewsForm()
+    
+    comments = CommentAutonews.objects.order_by('-created_at')  
+    context = {'fecha_hora_actual': fecha_hora_actual, 'comments':comments, 'form':form, 'noticias': noticias}
+    return render(request, 'cars_reviews_better_app/topgear.html', context)
+
+
+def caranddriver_view(request):
+    #noticias = obtener_noticias_scraping_autonews()
+    noticias = NoticiaDiferente.objects.filter(link__icontains='caranddriver').order_by('-fecha_creacion')
+    fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
+    if request.method == 'POST':
+        form = CommentAutonewsForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('caranddriver')  # Cambia 'comments' por el nombre de tu URL
+    else:
+        form = CommentAutonewsForm()
+    
+    comments = CommentAutonews.objects.order_by('-created_at')  
+    context = {'fecha_hora_actual': fecha_hora_actual, 'comments':comments, 'form':form, 'noticias': noticias}
+    return render(request, 'cars_reviews_better_app/caranddriver.html', context)
+
+
+
+
 def single_view(request):
     fecha_hora_actual = datetime.now().strftime('%A, %B %d, %Y %I:%M:%S %p')
     if request.method == 'POST':
@@ -391,7 +428,7 @@ def home_imdb_web(request):
         'name': request.user.username if request.user.is_authenticated else 'Invitado',
         'error': error_message
     }
-
+    
     return render(request, "cars_reviews_better_app/noticias.html", context)
 
 

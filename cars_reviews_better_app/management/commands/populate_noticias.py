@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 from cars_reviews_better_app.models import Noticia, NoticiaDiferente  # Asegúrate de importar el modelo
 from cars_reviews_better_app.scraper import obtener_noticias_scraping, obtener_noticias_scraping_carscoop, obtener_noticias_scraping_insideevs
-from cars_reviews_better_app.scraper import obtener_noticias_scraping_carmagazine_co_uk, obtener_noticias_scraping_autocar_co_uk
+from cars_reviews_better_app.scraper import obtener_noticias_scraping_carmagazine_co_uk, obtener_noticias_scraping_autocar_co_uk, obtener_noticias_scraping_topgear, obtener_noticias_scraping_caranddriver
 from cars_reviews_better_app.scraper import obtener_noticias_scraping_autonews , obtener_noticias_scraping_directo  # Importa tu función de scraping
 
 # cars_reviews_app/management/commands/populate_noticias.py
@@ -19,7 +19,8 @@ class Command(BaseCommand):
         obtener_noticias_scraping_carmagazine_co_uk()
         obtener_noticias_scraping_autocar_co_uk()
         obtener_noticias_scraping_autonews()
-        
+        obtener_noticias_scraping_topgear()
+        obtener_noticias_scraping_caranddriver()
         
         
         self.stdout.write(self.style.SUCCESS('Proceso completado: Noticias guardadas correctamente.'))

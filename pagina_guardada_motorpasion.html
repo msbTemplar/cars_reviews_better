@@ -2,7 +2,7 @@
 <html lang="es">
  <head>
    <script>
- var country = 'CY';
+ var country = 'SG';
  var isSpainOrLatamUser = false;
 </script>
  
@@ -39,127 +39,14 @@
   gtag('event', 'page_view', {"site":"MOP","site_section":"homepage","vertical":"Motor","amp":"no","visitor_country":"ES"});
  window.WSL2.gtag = gtag;
 </script>
-  <script>
-
- var gdprAppliesGlobally = true;
-
- (function() {
-  function n() {
-   if (!window.frames.__cmpLocator) {
-    if (document.body && document.body.firstChild) {
-     var e = document.body;
-     var t = document.createElement("iframe");
-     t.style.display = "none";
-     t.name = "__cmpLocator";
-     t.title = "cmpLocator";
-     e.insertBefore(t, e.firstChild)
-    } else {
-     setTimeout(n, 5)
-    }
-   }
-  }
-
-  function e(e, t, n) {
-   if (typeof n !== "function") {
-    return
-   }
-   if (!window.__cmpBuffer) {
-    window.__cmpBuffer = []
-   }
-   if (e === "ping") {
-    n({
-     gdprAppliesGlobally: window.gdprAppliesGlobally,
-     cmpLoaded: false
-    }, true)
-   } else {
-    window.__cmpBuffer.push({
-     command: e,
-     parameter: t,
-     callback: n
-    })
-   }
-  }
-  e.stub = true;
-
-  function t(r) {
-   if (!window.__cmp || window.__cmp.stub !== true) {
-    return
-   }
-   if (!r.data) {
-    return
-   }
-   var a = typeof r.data === "string";
-   var e;
-   try {
-    e = a ? JSON.parse(r.data) : r.data
-   } catch (t) {
-    return
-   }
-   if (e.__cmpCall) {
-    var o = e.__cmpCall;
-    window.__cmp(o.command, o.parameter, function(e, t) {
-     var n = {
-      __cmpReturn: {
-       returnValue: e,
-       success: t,
-       callId: o.callId
-      }
-     };
-     r.source.postMessage(a ? JSON.stringify(n) : n, "*")
-    })
-   }
-  }
-  if (typeof window.__cmp !== "function") {
-   window.__cmp = e;
-   if (window.addEventListener) {
-    window.addEventListener("message", t, false)
-   } else {
-    window.attachEvent("onmessage", t)
-   }
-  }
-  n()
- })();
-
-
- (function(e) {
-  var t = document.createElement("script");
-  t.id = "spcloader";
-  t.async = true;
-  t.src = "https://sdk.privacy-center.org/" + e + "/loader.js?target=" + document.location.hostname;
-  t.charset = "utf-8";
-  var n = document.getElementsByTagName("script")[0];
-  n.parentNode.insertBefore(t, n)
- })("05440b6e-0fe4-43e1-a2bd-23d6d37e3d69");
-
- function scrollListener(e) {
-  var o = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0,
-   n = Math.max(document.body.scrollHeight || 0, document.documentElement.scrollHeight || 0, document.body.offsetHeight || 0, document.documentElement.offsetHeight || 0, document.body.clientHeight || 0, document.documentElement.clientHeight || 0);
-  30 <= (window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0) / (n - o) * 100 && (Didomi.setUserAgreeToAll(), window.removeEventListener("scroll", scrollListener))
- }
-
- window.didomiOnReady = window.didomiOnReady || [], window.didomiOnReady.push(function(e) {
-  e.notice.isVisible() && window.addEventListener("scroll", scrollListener)
- });
-
-</script>
-<script type="didomi/javascript">
- if (!window.frames['__tcfapiLocator']) {
-  if (document.head) {
-   var head = document.head,
-   iframe = document.createElement('iframe');
-   iframe.style.cssText = 'display:none';
-   iframe.name = '__tcfapiLocator';
-   head.appendChild(iframe);
-  }
- }
-</script><script>
+ <script>
  window.WSL2 = window.WSL2 || {};
  WSL2.config = WSL2.config || {};
- WSL2.config.enableDidomiOverlay = 1;
+ WSL2.config.enableDidomiOverlay = 0;
 </script>
 
-  
-  
+   
+ 
   
 <link rel="preconnect" href="https://i.blogs.es">
 <link rel="shortcut icon" href="https://img.weblogssl.com/css/motorpasion/p/common/favicon.ico" type="image/ico">
@@ -174,19 +61,19 @@
  <link rel="dns-prefetch" href="https://ib.adnxs.com/">
  <link rel="preconnect" href="https://bidder.criteo.com/" crossorigin>
  <link rel="dns-prefetch" href="https://bidder.criteo.com/">
-<link rel="preload" as="style" href="https://img.weblogssl.com/css/motorpasion/p/default-d/main.css?v=1755600333">
+<link rel="preload" as="style" href="https://img.weblogssl.com/css/motorpasion/p/default-d/main.css?v=1757406720">
       <link rel="canonical" href="https://www.motorpasion.com">
 
     <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&amp;display=swap" as="style" type="text/css" crossorigin="anonymous">
   <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" as="style" type="text/css" crossorigin="anonymous">
- <link rel="stylesheet" type="text/css" href="https://img.weblogssl.com/css/motorpasion/p/default-d/main.css?v=1755600333">
+ <link rel="stylesheet" type="text/css" href="https://img.weblogssl.com/css/motorpasion/p/default-d/main.css?v=1757406720">
    
 
 <script type="application/ld+json">
- {"@context":"https:\/\/schema.org","@type":"NewsMediaOrganization","name":"Motorpasión","url":"https:\/\/www.motorpasion.com","logo":"https:\/\/img.weblogssl.com\/css\/motorpasion\/p\/amp\/images\/logo.png?v=1755600333","description":"Coches y actualidad del mundo del motor: salón del automóvil, presentaciones, marcas de coches y análisis de los últimos modelos de automóviles del mercado","contactPoint":[{"@type":"ContactPoint","telephone":"+34 917 92 74 77","email":"contacto@motorpasion.com"}],"address":{"@type":"PostalAddress","streetAddress":"Zurbano, 73 1º","addressLocality":"Madrid","postalCode":"28010","addressCountry":"ES"},"sameAs":["https:\/\/x.com\/motorpasion","https:\/\/www.facebook.com\/pages\/Motorpasion\/248376075721","https:\/\/www.youtube.com\/channel\/UCguXdnJdb0g65fW16AYO9WA","https:\/\/instagram.com\/motorpasion"],"parentOrganization":{"@type":"Organization","name":"Webedia","url":"https:\/\/es.webedia-group.com"}}
+ {"@context":"https:\/\/schema.org","@type":"NewsMediaOrganization","name":"Motorpasión","url":"https:\/\/www.motorpasion.com","logo":"https:\/\/img.weblogssl.com\/css\/motorpasion\/p\/amp\/images\/logo.png?v=1757406720","description":"Coches y actualidad del mundo del motor: salón del automóvil, presentaciones, marcas de coches y análisis de los últimos modelos de automóviles del mercado","contactPoint":[{"@type":"ContactPoint","telephone":"+34 917 92 74 77","email":"contacto@motorpasion.com"}],"address":{"@type":"PostalAddress","streetAddress":"Zurbano, 73 1º","addressLocality":"Madrid","postalCode":"28010","addressCountry":"ES"},"sameAs":["https:\/\/x.com\/motorpasion","https:\/\/www.facebook.com\/pages\/Motorpasion\/248376075721","https:\/\/www.youtube.com\/channel\/UCguXdnJdb0g65fW16AYO9WA","https:\/\/instagram.com\/motorpasion"],"parentOrganization":{"@type":"Organization","name":"Webedia","url":"https:\/\/es.webedia-group.com"}}
 </script>
 <script type="application/ld+json">
- {"@context":"https:\/\/schema.org","@type":"WebSite","name":"Motorpasión","url":"https:\/\/www.motorpasion.com","description":"Coches y actualidad del mundo del motor: salón del automóvil, presentaciones, marcas de coches y análisis de los últimos modelos de automóviles del mercado","sameAs":["https:\/\/x.com\/motorpasion","https:\/\/www.facebook.com\/pages\/Motorpasion\/248376075721","https:\/\/www.youtube.com\/channel\/UCguXdnJdb0g65fW16AYO9WA","https:\/\/instagram.com\/motorpasion"],"publisher":{"@type":"Organization","name":"Motorpasión","logo":{"@type":"ImageObject","url":"https:\/\/img.weblogssl.com\/css\/motorpasion\/p\/amp\/images\/logo.png?v=1755600333"}}}
+ {"@context":"https:\/\/schema.org","@type":"WebSite","name":"Motorpasión","url":"https:\/\/www.motorpasion.com","description":"Coches y actualidad del mundo del motor: salón del automóvil, presentaciones, marcas de coches y análisis de los últimos modelos de automóviles del mercado","sameAs":["https:\/\/x.com\/motorpasion","https:\/\/www.facebook.com\/pages\/Motorpasion\/248376075721","https:\/\/www.youtube.com\/channel\/UCguXdnJdb0g65fW16AYO9WA","https:\/\/instagram.com\/motorpasion"],"publisher":{"@type":"Organization","name":"Motorpasión","logo":{"@type":"ImageObject","url":"https:\/\/img.weblogssl.com\/css\/motorpasion\/p\/amp\/images\/logo.png?v=1757406720"}}}
 </script>
   </head>
  <body class=prod>
@@ -367,56 +254,20 @@
   });
  }
 </script> 
-  <script type="didomi/javascript">
-     function sendcomscore() {
-
- var s = document.createElement("script"),
- el = document.getElementsByTagName("script")[0];
- s.setAttribute("data-vendor", "iab:77");
- s.text = 'var cs_ucfr = ""; \
- if (Didomi.getUserStatusForVendor(77)) { \
-  var cs_ucfr = "1"; \
- } else if (Didomi.getUserStatusForVendor(77) == false) { \
-  var cs_ucfr = "0"; \
- } \
- \
- var _comscore = _comscore || []; \
- var configs = { \
-  c1: "2", \
-  c2: "6035191", \
-  cs_ucfr: cs_ucfr \
- }; \
- var keyword = keyword || ""; \
- if (keyword) { \
-  configs.options = { \
-   url_append: "comscorekw=" + keyword \
-  }; \
- } \
- _comscore.push(configs); \
- var s = document.createElement("script"), \
- el = document.getElementsByTagName("script")[0]; \
- \
- s.src = "https://sb.scorecardresearch.com/cs/6035191/beacon.js"; \
- \
- window.didomiEventListeners = []; \
- \
- el.parentNode.insertBefore(s, el);';
- el.parentNode.insertBefore(s, el);
-}
-
-if(Didomi.getUserStatusForVendor(77) == undefined){
-
- window.didomiEventListeners = window.didomiEventListeners || [];
- window.didomiEventListeners.push({
-  event: 'consent.changed',
-  listener: function(context) {
-
-  sendcomscore()
-  }
- });
-} else {
- sendcomscore()
-}   </script>
+  <script >
+     var cs_ucfr = "0";
+   var _comscore = _comscore || [];
+   var configs = {c1: "2", c2: "6035191", cs_ucfr: cs_ucfr};
+   var keyword = keyword || '';
+   if(keyword) {
+    configs.options = {url_append: "comscorekw=" + keyword};
+   }
+   _comscore.push(configs);
+   var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+   s.async = true;
+   s.src = "https://sb.scorecardresearch.com/cs/6035191/beacon.js";
+   el.parentNode.insertBefore(s, el);
+   </script>
 
   <div class="customize-me">
    <div class="head-content-favs">
@@ -441,7 +292,7 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
      <li class="masthead-actions-list-item"><a href="#headlines" class="masthead-actions-nuevo m-v1 js-toggle">Nuevo</a></li>
     </ul>
    </nav>
-   </div>
+      </div>
 </div>
      <div class="masthead-site-nav-container js-nano-container" id="showSwipecard">
  <nav class="masthead-site-nav">
@@ -510,7 +361,7 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
 
  
  </ul>
- </nav>
+   </nav>
 </div>
    </div>
 </div>
@@ -527,16 +378,16 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
          <div class="section-hero-list">
                      <article class="hero-poster poster-article">
  <div class="poster-figure">
-  <a href="/futuro-movimiento/ingeniero-espanol-ha-creado-mastil-que-convierte-viento-olas-electricidad-su-invento-puede-ser-principio-fin-diesel-barcos">
+  <a href="/toyota/hace-90-anos-toyota-compro-prensa-komatsu-700-toneladas-ha-viajado-mundo-ahora-ha-vuelto-a-casa-honores-para-fabricar-pilas-combustible-hidrogeno">
             <picture>
-        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/79350b/barco-mastil/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/79350b/barco-mastil/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/79350b/barco-mastil/200_200.jpeg" width="200" height="200"/>
-        <source media="(min-width: 376px)" srcset="https://i.blogs.es/79350b/barco-mastil/500_190.jpeg" width="500" height="190"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/79350b/barco-mastil/375_142.jpeg" width="375" height="142"/>
+        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/2decbf/prensa-komatsu/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/2decbf/prensa-komatsu/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/2decbf/prensa-komatsu/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 376px)" srcset="https://i.blogs.es/2decbf/prensa-komatsu/500_190.jpeg" width="500" height="190"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/2decbf/prensa-komatsu/375_142.jpeg" width="375" height="142"/>
       <img
-   alt="Un ingeniero español ha creado un mástil que convierte viento y olas en electricidad. Su invento puede ser el principio del fin del diésel en los barcos"
-   src="https://i.blogs.es/79350b/barco-mastil/375_142.jpeg"
+   alt="Hace más de 90 años Toyota compró una prensa Komatsu de 700 toneladas. Ha viajado por el mundo y ahora ha vuelto a casa con honores para fabricar pilas de combustible de hidrógeno "
+   src="https://i.blogs.es/2decbf/prensa-komatsu/375_142.jpeg"
    width="375"
    height="142"
   >
@@ -546,22 +397,22 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
  </div>
  <header class="poster-content">
     <h2 class="poster-title">
-   <a href="/futuro-movimiento/ingeniero-espanol-ha-creado-mastil-que-convierte-viento-olas-electricidad-su-invento-puede-ser-principio-fin-diesel-barcos">Un ingeniero español ha creado un mástil que convierte viento y olas en electricidad. Su invento puede ser el principio del fin del diésel en los barcos</a>
+   <a href="/toyota/hace-90-anos-toyota-compro-prensa-komatsu-700-toneladas-ha-viajado-mundo-ahora-ha-vuelto-a-casa-honores-para-fabricar-pilas-combustible-hidrogeno">Hace más de 90 años Toyota compró una prensa Komatsu de 700 toneladas. Ha viajado por el mundo y ahora ha vuelto a casa con honores para fabricar pilas de combustible de hidrógeno </a>
   </h2>
  </header>
 </article>
                           <article class="hero-poster poster-article">
  <div class="poster-figure">
-  <a href="/futuro-movimiento/muro-invisible-transicion-energetica-espana-produce-electricidad-limpia-que-nunca-no-aprovecha-factura-luz-no-baja">
+  <a href="/seguridad/mg-3-sufre-fallo-critico-seguridad-prueba-choque-euro-ncap-recomienda-a-consumidores-que-consideren-otros-coches-lugar-mg3">
             <picture>
-        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/200_200.jpeg" width="200" height="200"/>
-        <source media="(min-width: 376px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/500_190.jpeg" width="500" height="190"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/375_142.jpeg" width="375" height="142"/>
+        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 376px)" srcset="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/500_190.jpeg" width="500" height="190"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/375_142.jpeg" width="375" height="142"/>
       <img
-   alt="El muro invisible de la transición energética: España produce más electricidad limpia que nunca, pero no la aprovecha y la factura de la luz no baja"
-   src="https://i.blogs.es/b5f7e3/paneles-solares-03/375_142.jpeg"
+   alt="El MG 3 sufre un fallo crítico de seguridad en la prueba de choque Euro NCAP y la organización &quot;recomienda a los consumidores que consideren otros coches en lugar del MG3&quot;"
+   src="https://i.blogs.es/a1f886/mg-3-euro-ncap-frontal/375_142.jpeg"
    width="375"
    height="142"
   >
@@ -571,22 +422,22 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
  </div>
  <header class="poster-content">
     <h2 class="poster-title">
-   <a href="/futuro-movimiento/muro-invisible-transicion-energetica-espana-produce-electricidad-limpia-que-nunca-no-aprovecha-factura-luz-no-baja">El muro invisible de la transición energética: España produce más electricidad limpia que nunca, pero no la aprovecha y la factura de la luz no baja</a>
+   <a href="/seguridad/mg-3-sufre-fallo-critico-seguridad-prueba-choque-euro-ncap-recomienda-a-consumidores-que-consideren-otros-coches-lugar-mg3">El MG 3 sufre un fallo crítico de seguridad en la prueba de choque Euro NCAP y la organización "recomienda a los consumidores que consideren otros coches en lugar del MG3"</a>
   </h2>
  </header>
 </article>
                           <article class="hero-poster poster-article">
  <div class="poster-figure">
-  <a href="/seguridad/mito-dice-que-conductores-bmw-nunca-ponen-intermitente-ahora-estudio-demuestra-desmiente-a-vez">
+  <a href="/formula1/no-entiendo-que-esta-haciendo-ex-campeon-f1-ha-explotado-carlos-sainz-pide-sanciones-para">
             <picture>
-        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/200_200.jpeg" width="200" height="200"/>
-        <source media="(min-width: 376px)" srcset="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/500_190.jpeg" width="500" height="190"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/375_142.jpeg" width="375" height="142"/>
+        <source media="(min-width: 1360px)" srcset="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 1023px)" srcset="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 376px)" srcset="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/500_190.jpeg" width="500" height="190"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/375_142.jpeg" width="375" height="142"/>
       <img
-   alt="Un mito dice que los conductores de BMW nunca ponen el intermitente. Ahora un estudio lo demuestra y desmiente a la vez"
-   src="https://i.blogs.es/fdd43e/conductor-bmw-intermitente/375_142.jpeg"
+   alt="&quot;No entiendo qué está haciendo&quot;. Un ex campeón de F1 ha explotado contra Carlos Sainz, y pide sanciones para él "
+   src="https://i.blogs.es/ebd81f/carlos-sainz-monza-f1-2025/375_142.jpeg"
    width="375"
    height="142"
   >
@@ -596,7 +447,7 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
  </div>
  <header class="poster-content">
     <h2 class="poster-title">
-   <a href="/seguridad/mito-dice-que-conductores-bmw-nunca-ponen-intermitente-ahora-estudio-demuestra-desmiente-a-vez">Un mito dice que los conductores de BMW nunca ponen el intermitente. Ahora un estudio lo demuestra y desmiente a la vez</a>
+   <a href="/formula1/no-entiendo-que-esta-haciendo-ex-campeon-f1-ha-explotado-carlos-sainz-pide-sanciones-para">"No entiendo qué está haciendo". Un ex campeón de F1 ha explotado contra Carlos Sainz, y pide sanciones para él </a>
   </h2>
  </header>
 </article>
@@ -609,14 +460,16 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
        <div class="section-deeplinking-wrap">
      <span class="section-deeplinking-header">HOY SE HABLA DE</span>
      <ul id="js-deeplinking-news-nav-links" class="section-deeplinking-list">
-             <li class="section-deeplinking-item"><a href="https://www.xataka.com/energia/eeuu-quiere-acabar-dominio-absoluto-china-mercado-baterias-corea-sur-no-tiene-nada-que-hacer" class="section-deeplinking-anchor">Baterías</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.xataka.com/movilidad/hubo-dia-que-volkswagen-quiso-tener-bentley-pueblo-salio-mal" class="section-deeplinking-anchor">Bentley</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.xataka.com/magnet/paises-bombas-nucleares-2025-reunidos-este-grafico-dos-protagonistas-china-e-india" class="section-deeplinking-anchor">China</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.xataka.com/magnet/calle-larga-espana-mide-19-km-no-cruza-madrid-barcelona-fruto-capricho-naturaleza-2" class="section-deeplinking-anchor">España</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.motorpasion.com/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente" class="section-deeplinking-anchor">Ferrari</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.xatakandroid.com/aplicaciones-android/google-maps-me-sugiere-ruta-alternativa-pleno-atasco-que-me-pienso-dos-veces-antes-cambiar-mi-camino" class="section-deeplinking-anchor">Google Maps</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.motorpasion.com/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo" class="section-deeplinking-anchor">Honda</a></li>
-             <li class="section-deeplinking-item"><a href="https://www.xataka.com/magnet/industria-tatuaje-crisis-arrepentimiento-clinicas-borrado-profesionales-que-viven-peor-que-antes" class="section-deeplinking-anchor">Industria</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakamovil.com/movil-y-sociedad/conductores-pasan-google-maps-waze-android-auto-carplay-asi-como-navegan-su-coche-directivo-bmw" class="section-deeplinking-anchor">Android Auto</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xataka.com/movilidad/han-arrestado-al-piloto-fantasma-que-conducia-autovia-monoplaza-han-hecho-falta-seis-anos-decenas-patrullas-helicoptero" class="section-deeplinking-anchor">Autovía</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xataka.com/magnet/america-latina-ha-comenzado-su-renacer-ferroviario-hay-alguien-muy-interesado-china" class="section-deeplinking-anchor">China</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xataka.com/magnet/india-se-ahoga-millones-toneladas-plastico-ciudad-ha-encontrado-salida-inesperada-cambiarlo-platos-curry-arroz" class="section-deeplinking-anchor">Ciudad</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakandroid.com/aplicaciones-android/llevo-toda-vida-usando-google-maps-mal-cuando-voy-a-pie-esta-mejor-forma-saber-donde-ir" class="section-deeplinking-anchor">Google Maps</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto" class="section-deeplinking-anchor">KIA</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakamovil.com/aplicaciones/le-hice-bizum-a-desconocido-error-su-buena-voluntad-ha-salvado-gran-multa" class="section-deeplinking-anchor">Multa</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakamovil.com/movil-y-sociedad/cambiar-ruedas-f1-rapido-espera-a-ver-cambio-pantalla-mundial-moviles-que-se-va-a-celebrar-china" class="section-deeplinking-anchor">Reparación</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakahome.com/hogar/no-tus-vecinos-no-estan-jugando-a-canicas-a-3-manana-ese-ruido-pulso-zhukowski-algo-natural" class="section-deeplinking-anchor">Ruido</a></li>
+             <li class="section-deeplinking-item"><a href="https://www.xatakahome.com/altavoces/esta-tecnologia-promete-convertir-casi-cualquier-superficie-casa-altavoces-ocultos-que-dan-sonido-vibran" class="section-deeplinking-anchor">Tecnología</a></li>
            </ul>
      <div id="js-deeplinking-news-nav-btn" class="section-deeplinking-btn" style="display:none"></div>
     </div>
@@ -638,17 +491,17 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
 </aside>
 
       <div class="section-recent-list js-s4">
-          <article class="recent-abstract abstract-article" data-post-id="331120">
+          <article class="recent-abstract abstract-article" data-post-id="331306">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/seguridad/colega-que-ese-tercer-pedal-intentaron-robar-suv-cambio-manual-no-sabian-conducirlo-asi-que-raptaron-a-su-dueno-hiciera">
+  <a href="https://www.motorpasion.com/videos-de-coches/hay-que-tener-mucho-dinero-para-comprarse-ferrari-muy-poca-educacion-para-dejarlo-aparcado-medio-cruce-nueva-york">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/af16f0/cambio-manual-01/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/af16f0/cambio-manual-01/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/af16f0/cambio-manual-01/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/a2a50b/ferrari/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/a2a50b/ferrari/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/a2a50b/ferrari/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="Colega, ¿qué es ese tercer pedal? Intentaron robar un SUV con cambio manual pero no sabían conducirlo, así que raptaron a su dueño para que lo hiciera "
-   src="https://i.blogs.es/af16f0/cambio-manual-01/200_200.jpeg"
+   alt="Hay que tener mucho dinero para comprarse un Ferrari... y muy poca educación para dejarlo aparcado en medio de un cruce de Nueva York "
+   src="https://i.blogs.es/a2a50b/ferrari/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -659,35 +512,74 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/seguridad/colega-que-ese-tercer-pedal-intentaron-robar-suv-cambio-manual-no-sabian-conducirlo-asi-que-raptaron-a-su-dueno-hiciera">Colega, ¿qué es ese tercer pedal? Intentaron robar un SUV con cambio manual pero no sabían conducirlo, así que raptaron a su dueño para que lo hiciera </a></h2>
-            <a class="abstract-taxonomy" href="/categoria/seguridad">Seguridad</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/videos-de-coches/hay-que-tener-mucho-dinero-para-comprarse-ferrari-muy-poca-educacion-para-dejarlo-aparcado-medio-cruce-nueva-york">Hay que tener mucho dinero para comprarse un Ferrari... y muy poca educación para dejarlo aparcado en medio de un cruce de Nueva York </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/videos-de-coches">Vídeos de coches</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>Desafortunadamente para las dos ladronas, la pareja de ancianos que escogieron tenía un Subaru Forester de cambio manual.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/seguridad/colega-que-ese-tercer-pedal-intentaron-robar-suv-cambio-manual-no-sabian-conducirlo-asi-que-raptaron-a-su-dueno-hiciera">Leer más &raquo;
+                 <p>El equipamiento de un Ferrari no incluye la educación y el sentido común, es cosa del conductor.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/videos-de-coches/hay-que-tener-mucho-dinero-para-comprarse-ferrari-muy-poca-educacion-para-dejarlo-aparcado-medio-cruce-nueva-york">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/seguridad/colega-que-ese-tercer-pedal-intentaron-robar-suv-cambio-manual-no-sabian-conducirlo-asi-que-raptaron-a-su-dueno-hiciera#to-comments">
+         <a class="abstract-comments" href="https://www.motorpasion.com/videos-de-coches/hay-que-tener-mucho-dinero-para-comprarse-ferrari-muy-poca-educacion-para-dejarlo-aparcado-medio-cruce-nueva-york#to-comments">
       <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/daniel-murias">Daniel Murias</a>
+        <time title="2025-09-14T06:00:46Z" class="abstract-date" datetime="2025-09-14T06:00:46Z">2025-09-14T06:00:46Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331368">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Conocemos el Kia PV5: un monovolumen eléctrico que no es más grande por fuera que un SUV, pero con muchísimo más espacio por dentro"
+   src="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto">Conocemos el Kia PV5: un monovolumen eléctrico que no es más grande por fuera que un SUV, pero con muchísimo más espacio por dentro</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/compra-coches">Compra de coches</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Kia estrena su furgoneta media de 4,7 m completamente eléctrica con hasta 412 km y que cuesta menos de 40.000 euros. La analizamos tras abrir sus puertas y "bichear" dentro.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto#to-comments">
+      <span class="abstract-comment-count">3</span> <span class="abstract-comment-label">comentarios</span>
      </a>
              <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-24T11:00:46Z" class="abstract-date" datetime="2025-08-24T11:00:46Z">2025-08-24T11:00:46Z</time>
+        <time title="2025-09-13T10:00:46Z" class="abstract-date" datetime="2025-09-13T10:00:46Z">2025-09-13T10:00:46Z</time>
    </footer>
    </div>
 </article>
  
-          <article class="recent-abstract abstract-article" data-post-id="331107">
+          <article class="recent-abstract abstract-article" data-post-id="331307">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo">
+  <a href="https://www.motorpasion.com/tecnologia/dgt-conductores-futuro-seran-coches-que-decidan-eres-demasiado-mayor-para-conducir-estan-ello">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/be7902/hondaf1/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/be7902/hondaf1/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/be7902/hondaf1/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/884ef8/conductor/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/884ef8/conductor/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/884ef8/conductor/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="Honda revive su primera victoria en la Fórmula 1, 60 años después, con una maqueta que cuesta más que un coche nuevo "
-   src="https://i.blogs.es/be7902/hondaf1/200_200.jpeg"
+   alt="Ni la DGT ni los conductores: en el futuro serán los coches los que decidan si eres demasiado mayor para conducir. Y ya están en ello "
+   src="https://i.blogs.es/884ef8/conductor/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -698,91 +590,59 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo">Honda revive su primera victoria en la Fórmula 1, 60 años después, con una maqueta que cuesta más que un coche nuevo </a></h2>
-            <a class="abstract-taxonomy" href="/categoria/honda">Honda</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/tecnologia/dgt-conductores-futuro-seran-coches-que-decidan-eres-demasiado-mayor-para-conducir-estan-ello">Ni la DGT ni los conductores: en el futuro serán los coches los que decidan si eres demasiado mayor para conducir. Y ya están en ello </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/tecnologia">Tecnología</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>Honda y Amalgam han creado la maqueta más exclusiva de su historia: el RA272 que ganó en México en 1965, ahora en miniatura, a precio de compacto</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo">Leer más &raquo;
+                 <p><strong>General Motors ha solicitado una patente</strong> a la Oficina de Patentes y Marcas de Estados Unidos para evaluar si los conductores mayores aún pueden conducir de forma segura y eficaz. </p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/tecnologia/dgt-conductores-futuro-seran-coches-que-decidan-eres-demasiado-mayor-para-conducir-estan-ello">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/irene-mendoza">Irene Mendoza</a>
-        <time title="2025-08-24T07:00:46Z" class="abstract-date" datetime="2025-08-24T07:00:46Z">2025-08-24T07:00:46Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-3djuegos" data-post-id="331136">
-  <div class="abstract-figure">
-     <div class="base-asset-image">
-    <a href="https://www.3djuegos.com/juegos/dying-light/noticias/mundo-abierto-zombies-exitoso-ultima-decada-esta-gratis-steam-tiempo-limitado?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
-     <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/be6f4b/dydfyf/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/be6f4b/dydfyf/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/be6f4b/dydfyf/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/be6f4b/dydfyf/200_200.jpeg" alt="El mundo abierto con zombies más exitoso de la última década está gratis en Steam por tiempo limitado " width="200" height="200">
-     </picture>
-    </a>
-   </div>
-     </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.3djuegos.com/juegos/dying-light/noticias/mundo-abierto-zombies-exitoso-ultima-decada-esta-gratis-steam-tiempo-limitado?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">El mundo abierto con zombies más exitoso de la última década está gratis en Steam por tiempo limitado </a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.3djuegos.com">3DJuegos</a>
-     </header>
-      <div class="abstract-excerpt">
-        <p>Techland celebra el inminente lanzamiento de Dying Light The Beast con una prueba por tiempo limitado de la aventura original de Kyle Crane</p>
-   <a class="abstract-link-more" href="https://www.3djuegos.com/juegos/dying-light/noticias/mundo-abierto-zombies-exitoso-ultima-decada-esta-gratis-steam-tiempo-limitado?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
-  </a>
-    </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.3djuegos.com/juegos/dying-light/noticias/mundo-abierto-zombies-exitoso-ultima-decada-esta-gratis-steam-tiempo-limitado?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-            <time title="2025-08-24T10:35:06Z" class="abstract-date" datetime="2025-08-24T10:35:06Z">2025-08-24T10:35:06Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331125">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/d0cc0e/hamilton-hungria-f1-2025/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/d0cc0e/hamilton-hungria-f1-2025/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/d0cc0e/hamilton-hungria-f1-2025/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="&quot;El 90% de los empleados votó en contra&quot;. Ferrari hizo una encuesta en su equipo de F1 para decidir si fichaban a Lewis Hamilton. Parece que no era concluyente "
-   src="https://i.blogs.es/d0cc0e/hamilton-hungria-f1-2025/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente">"El 90% de los empleados votó en contra". Ferrari hizo una encuesta en su equipo de F1 para decidir si fichaban a Lewis Hamilton. Parece que no era concluyente </a></h2>
-            <a class="abstract-taxonomy" href="/categoria/formula1">Fórmula1</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>Un ex piloto de Ferrari revela que el fichaje de Lewis Hamilton "fue una operación de marketing" desoyendo a los propios empleados.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente#to-comments">
+         <a class="abstract-comments" href="https://www.motorpasion.com/tecnologia/dgt-conductores-futuro-seran-coches-que-decidan-eres-demasiado-mayor-para-conducir-estan-ello#to-comments">
       <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-             <a class="abstract-author" href="/autor/roberto-rodriguez">Roberto Montijo</a>
-        <time title="2025-08-23T13:00:46Z" class="abstract-date" datetime="2025-08-23T13:00:46Z">2025-08-23T13:00:46Z</time>
+             <a class="abstract-author" href="/autor/victoria-fuentes">Victoria Fuentes</a>
+        <time title="2025-09-13T08:00:46Z" class="abstract-date" datetime="2025-09-13T08:00:46Z">2025-09-13T08:00:46Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331305">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/industria/estudiante-metia-tres-goles-imposibles-concesionario-tenia-que-regalarle-coche-metio-goles-concesionario-se-metio-problema">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/ab9bd5/ford-mustang-mach-1-2021-prueba-053/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/ab9bd5/ford-mustang-mach-1-2021-prueba-053/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/ab9bd5/ford-mustang-mach-1-2021-prueba-053/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Si un estudiante metía tres goles imposibles, el concesionario tenía que regalarle un coche. Él metió los goles y el concesionario se metió en un problema  "
+   src="https://i.blogs.es/ab9bd5/ford-mustang-mach-1-2021-prueba-053/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/industria/estudiante-metia-tres-goles-imposibles-concesionario-tenia-que-regalarle-coche-metio-goles-concesionario-se-metio-problema">Si un estudiante metía tres goles imposibles, el concesionario tenía que regalarle un coche. Él metió los goles y el concesionario se metió en un problema  </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/industria">Industria</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Hasta la fecha, solo otro estudiante lo había conseguido. El concesionario jugó a ser el VAR para no darle el premio y acabó pagándolo caro.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/industria/estudiante-metia-tres-goles-imposibles-concesionario-tenia-que-regalarle-coche-metio-goles-concesionario-se-metio-problema">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/industria/estudiante-metia-tres-goles-imposibles-concesionario-tenia-que-regalarle-coche-metio-goles-concesionario-se-metio-problema#to-comments">
+      <span class="abstract-comment-count">2</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
+        <time title="2025-09-13T06:00:46Z" class="abstract-date" datetime="2025-09-13T06:00:46Z">2025-09-13T06:00:46Z</time>
    </footer>
    </div>
 </article>
@@ -840,49 +700,17 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
 </aside>
 
       <div class="section-recent-list js-s4">
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-espinof" data-post-id="331132">
-  <div class="abstract-figure">
-     <div class="base-asset-image">
-    <a href="https://www.espinof.com/listas/estos-remakes-anime-querian-superar-a-originales-terminaron-siendo-pufo-desencantando-a-fans?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
-     <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/ad143f/berserk/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/ad143f/berserk/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/ad143f/berserk/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/ad143f/berserk/200_200.jpeg" alt="Estos remakes de anime querían superar a los originales pero terminaron siendo un pufo y desencantando a los fans " width="200" height="200">
-     </picture>
-    </a>
-   </div>
-     </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.espinof.com/listas/estos-remakes-anime-querian-superar-a-originales-terminaron-siendo-pufo-desencantando-a-fans?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Estos remakes de anime querían superar a los originales pero terminaron siendo un pufo y desencantando a los fans </a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.espinof.com">Espinof</a>
-     </header>
-      <div class="abstract-excerpt">
-        <p>Estar a la altura de la nostalgia no siempre es fácil</p>
-   <a class="abstract-link-more" href="https://www.espinof.com/listas/estos-remakes-anime-querian-superar-a-originales-terminaron-siendo-pufo-desencantando-a-fans?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
-  </a>
-    </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.espinof.com/listas/estos-remakes-anime-querian-superar-a-originales-terminaron-siendo-pufo-desencantando-a-fans?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-            <time title="2025-08-23T13:42:46Z" class="abstract-date" datetime="2025-08-23T13:42:46Z">2025-08-23T13:42:46Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331086">
+          <article class="recent-abstract abstract-article" data-post-id="331349">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/ferrari/ferrari-records-v12-potente-marca-unico-mundo-ha-sido-cavallino-nuevo-caro-jamas-subastado">
+  <a href="https://www.motorpasion.com/seguridad/1990-piloto-fue-succionado-ventanilla-cabina-a-5-000-metros-sobrevivio-porque-le-sujetaron-tobillos-durante-20-minutos">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/8f21e1/ferrari-sp3-daytona-nuevo-mas-caro-subasta-01/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/8f21e1/ferrari-sp3-daytona-nuevo-mas-caro-subasta-01/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/8f21e1/ferrari-sp3-daytona-nuevo-mas-caro-subasta-01/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/cf35b8/mayday/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/cf35b8/mayday/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/cf35b8/mayday/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="El Ferrari de los récords: el cavallino nuevo más caro jamás subastado es único en el mundo y lleva el V12 de Ferrari más potente"
-   src="https://i.blogs.es/8f21e1/ferrari-sp3-daytona-nuevo-mas-caro-subasta-01/200_200.jpeg"
+   alt="En 1990 un piloto fue succionado por la ventanilla de la cabina a 5.000 metros. Sobrevivió porque le sujetaron por los tobillos durante 20 minutos"
+   src="https://i.blogs.es/cf35b8/mayday/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -893,91 +721,123 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/ferrari/ferrari-records-v12-potente-marca-unico-mundo-ha-sido-cavallino-nuevo-caro-jamas-subastado">El Ferrari de los récords: el cavallino nuevo más caro jamás subastado es único en el mundo y lleva el V12 de Ferrari más potente</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/ferrari">Ferrari</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>Se ha vendido por 26 millones de dólares. Nunca un Ferrari nuevo se ha subastado por tal cifra.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/ferrari/ferrari-records-v12-potente-marca-unico-mundo-ha-sido-cavallino-nuevo-caro-jamas-subastado">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/ferrari/ferrari-records-v12-potente-marca-unico-mundo-ha-sido-cavallino-nuevo-caro-jamas-subastado#to-comments">
-      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-23T10:00:46Z" class="abstract-date" datetime="2025-08-23T10:00:46Z">2025-08-23T10:00:46Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="330883">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/seguridad/verano-mejor-epoca-ano-para-asfaltar-carreteras-sufras-tus-vacaciones-tiene-explicacion-1">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/488c5e/microsoft-bing-ia-1/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/488c5e/microsoft-bing-ia-1/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/488c5e/microsoft-bing-ia-1/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="El verano es la mejor época del año para asfaltar carreteras, aunque lo sufras en tus vacaciones. Tiene una explicación "
-   src="https://i.blogs.es/488c5e/microsoft-bing-ia-1/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/seguridad/verano-mejor-epoca-ano-para-asfaltar-carreteras-sufras-tus-vacaciones-tiene-explicacion-1">El verano es la mejor época del año para asfaltar carreteras, aunque lo sufras en tus vacaciones. Tiene una explicación </a></h2>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/seguridad/1990-piloto-fue-succionado-ventanilla-cabina-a-5-000-metros-sobrevivio-porque-le-sujetaron-tobillos-durante-20-minutos">En 1990 un piloto fue succionado por la ventanilla de la cabina a 5.000 metros. Sobrevivió porque le sujetaron por los tobillos durante 20 minutos</a></h2>
             <a class="abstract-taxonomy" href="/categoria/seguridad">Seguridad</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>Las altas temperaturas favorecen los trabajos de asfaltado.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/seguridad/verano-mejor-epoca-ano-para-asfaltar-carreteras-sufras-tus-vacaciones-tiene-explicacion-1">Leer más &raquo;
+                 <p>El capitán Tim Lancaster está pegado al exterior del avión, con las piernas enredadas en la columna de control: "Su cara golpeaba contra la ventana y le salía sangre por la nariz y un lado de la cabeza, sus brazos se agitaban".</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/seguridad/1990-piloto-fue-succionado-ventanilla-cabina-a-5-000-metros-sobrevivio-porque-le-sujetaron-tobillos-durante-20-minutos">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/seguridad/verano-mejor-epoca-ano-para-asfaltar-carreteras-sufras-tus-vacaciones-tiene-explicacion-1#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
+         <a class="abstract-comments" href="https://www.motorpasion.com/seguridad/1990-piloto-fue-succionado-ventanilla-cabina-a-5-000-metros-sobrevivio-porque-le-sujetaron-tobillos-durante-20-minutos#to-comments">
+      <span class="abstract-comment-count">2</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-             <a class="abstract-author" href="/autor/alvaro-ruiz">Álvaro Ruiz</a>
-        <time title="2025-08-23T07:00:46Z" class="abstract-date" datetime="2025-08-23T07:00:46Z">2025-08-23T07:00:46Z</time>
+             <a class="abstract-author" href="/autor/victoria-fuentes">Victoria Fuentes</a>
+        <time title="2025-09-12T18:00:46Z" class="abstract-date" datetime="2025-09-12T18:00:46Z">2025-09-12T18:00:46Z</time>
    </footer>
    </div>
 </article>
  
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-3djuegos" data-post-id="331131">
+          <article class="recent-abstract abstract-article" data-post-id="331401">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/industria/inteligencia-artificial-desguaces-cuando-ia-decide-que-rentable-exportar-coche-troceado-como-siniestro-total-que-arreglarlo">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/1c82b7/desguace-jaguar-ipace/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/1c82b7/desguace-jaguar-ipace/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/1c82b7/desguace-jaguar-ipace/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Inteligencia Artificial y desguaces:  cuando la IA decide que es más rentable exportar un coche troceado como siniestro total que arreglarlo "
+   src="https://i.blogs.es/1c82b7/desguace-jaguar-ipace/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/industria/inteligencia-artificial-desguaces-cuando-ia-decide-que-rentable-exportar-coche-troceado-como-siniestro-total-que-arreglarlo">Inteligencia Artificial y desguaces:  cuando la IA decide que es más rentable exportar un coche troceado como siniestro total que arreglarlo </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/industria">Industria</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Sin darnos cuenta, la IA está dando forma a aspectos cotidiana de nuestra vida. Pronto, también podría determinar el valor de nuestro coche.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/industria/inteligencia-artificial-desguaces-cuando-ia-decide-que-rentable-exportar-coche-troceado-como-siniestro-total-que-arreglarlo">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/industria/inteligencia-artificial-desguaces-cuando-ia-decide-que-rentable-exportar-coche-troceado-como-siniestro-total-que-arreglarlo#to-comments">
+      <span class="abstract-comment-count">2</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/daniel-murias">Daniel Murias</a>
+        <time title="2025-09-12T16:00:46Z" class="abstract-date" datetime="2025-09-12T16:00:46Z">2025-09-12T16:00:46Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-xataka" data-post-id="331407">
   <div class="abstract-figure">
      <div class="base-asset-image">
-    <a href="https://www.3djuegos.com/tv-series/noticias/george-lucas-le-dio-consejo-al-director-mayor-fracaso-star-wars-no-olvides-esto-para-ninos-12-anos?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+    <a href="https://www.xataka.com/musica/radiohead-ha-inventado-sistema-para-dificultar-reventa-entradas-a-costa-que-comprarlas-sea-incomodo-como-siempre?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
      <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/c3af8f/star-wars-solo-enfys-nest-ron-howard-george-lucas/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/c3af8f/star-wars-solo-enfys-nest-ron-howard-george-lucas/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/c3af8f/star-wars-solo-enfys-nest-ron-howard-george-lucas/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/c3af8f/star-wars-solo-enfys-nest-ron-howard-george-lucas/200_200.jpeg" alt="George Lucas le dio un consejo al director del mayor fracaso de Star Wars: &quot;No lo olvides, esto es para niños de 12 años&quot; " width="200" height="200">
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/058220/1624px-radiohead_france_2008/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/058220/1624px-radiohead_france_2008/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/058220/1624px-radiohead_france_2008/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/058220/1624px-radiohead_france_2008/200_200.jpeg" alt="Radiohead ha inventado un sistema para dificultar la reventa de entradas. A costa de que comprarlas sea tan incómodo como siempre" width="200" height="200">
      </picture>
     </a>
    </div>
      </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.3djuegos.com/tv-series/noticias/george-lucas-le-dio-consejo-al-director-mayor-fracaso-star-wars-no-olvides-esto-para-ninos-12-anos?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">George Lucas le dio un consejo al director del mayor fracaso de Star Wars: "No lo olvides, esto es para niños de 12 años" </a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.3djuegos.com">3DJuegos</a>
+   <h2 class="abstract-title"><a href="https://www.xataka.com/musica/radiohead-ha-inventado-sistema-para-dificultar-reventa-entradas-a-costa-que-comprarlas-sea-incomodo-como-siempre?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Radiohead ha inventado un sistema para dificultar la reventa de entradas. A costa de que comprarlas sea tan incómodo como siempre</a></h2>
+        <a class="abstract-taxonomy m-crosspost" href="https://www.xataka.com">Xataka</a>
      </header>
       <div class="abstract-excerpt">
-        <p>Una aventura galáctica con un destino complicado: la historia detrás de Solo, el consejo de George Lucas y el rodaje más turbulento de toda la saga Star Wars</p>
-   <a class="abstract-link-more" href="https://www.3djuegos.com/tv-series/noticias/george-lucas-le-dio-consejo-al-director-mayor-fracaso-star-wars-no-olvides-esto-para-ninos-12-anos?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+        <p>Reventa no. Fans contentos, tampoco</p>
+   <a class="abstract-link-more" href="https://www.xataka.com/musica/radiohead-ha-inventado-sistema-para-dificultar-reventa-entradas-a-costa-que-comprarlas-sea-incomodo-como-siempre?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
   </a>
     </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.3djuegos.com/tv-series/noticias/george-lucas-le-dio-consejo-al-director-mayor-fracaso-star-wars-no-olvides-esto-para-ninos-12-anos?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+         <a class="abstract-comments" href="https://www.xataka.com/musica/radiohead-ha-inventado-sistema-para-dificultar-reventa-entradas-a-costa-que-comprarlas-sea-incomodo-como-siempre?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
       <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-            <time title="2025-08-23T08:07:06Z" class="abstract-date" datetime="2025-08-23T08:07:06Z">2025-08-23T08:07:06Z</time>
+            <time title="2025-09-12T16:14:18Z" class="abstract-date" datetime="2025-09-12T16:14:18Z">2025-09-12T16:14:18Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-trendencias" data-post-id="331406">
+  <div class="abstract-figure">
+     <div class="base-asset-image">
+    <a href="https://www.trendencias.com/familia-maternidad-y-ninos/he-estudiado-a-200-ninos-experta-crianza-comparte-habitos-padres-sus-hijos-sean-felices-que-demas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+     <picture>
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b4698b/habitos-de-padres-con-hijos-felices-1/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/b4698b/habitos-de-padres-con-hijos-felices-1/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/b4698b/habitos-de-padres-con-hijos-felices-1/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/b4698b/habitos-de-padres-con-hijos-felices-1/200_200.jpeg" alt="Lo que distingue a los padres de los niños más felices que el resto son cuatro hábitos. Con ellos enseñan inteligencia emocional a sus hijos" width="200" height="200">
+     </picture>
+    </a>
+   </div>
+     </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.trendencias.com/familia-maternidad-y-ninos/he-estudiado-a-200-ninos-experta-crianza-comparte-habitos-padres-sus-hijos-sean-felices-que-demas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Lo que distingue a los padres de los niños más felices que el resto son cuatro hábitos. Con ellos enseñan inteligencia emocional a sus hijos</a></h2>
+        <a class="abstract-taxonomy m-crosspost" href="https://www.trendencias.com">Trendencias</a>
+     </header>
+      <div class="abstract-excerpt">
+        <p>Cuando hablamos de felicidad o bienestar emocional, no lo hacemos de algo mágico, sino de algo que está muy ligado a cómo funciona el cerebro. Sabemos que el cerebro tiene “zonas de felicidad”, áreas que se activan y que curiosamente,...</p>
+   <a class="abstract-link-more" href="https://www.trendencias.com/familia-maternidad-y-ninos/he-estudiado-a-200-ninos-experta-crianza-comparte-habitos-padres-sus-hijos-sean-felices-que-demas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+  </a>
+    </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.trendencias.com/familia-maternidad-y-ninos/he-estudiado-a-200-ninos-experta-crianza-comparte-habitos-padres-sus-hijos-sean-felices-que-demas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+            <time title="2025-09-12T16:13:50Z" class="abstract-date" datetime="2025-09-12T16:13:50Z">2025-09-12T16:13:50Z</time>
    </footer>
    </div>
 </article>
@@ -1021,76 +881,76 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
     <div class="section-cross-content">
      <ul class="section-cross-content-list">
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/ingeniero-espanol-ha-creado-mastil-que-convierte-viento-olas-electricidad-su-invento-puede-ser-principio-fin-diesel-barcos">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/china-ha-inundado-mundo-paneles-solares-eolicas-que-ha-iniciado-fin-energias-fosiles">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/79350b/barco-mastil/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/79350b/barco-mastil/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/79350b/barco-mastil/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/79350b/barco-mastil/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/79350b/barco-mastil/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/375_142.jpeg" width="375" height="142">
           <img
-           alt="Un ingeniero español ha creado un mástil que convierte viento y olas en electricidad. Su invento puede ser el principio del fin del diésel en los barcos"
-           src="https://i.blogs.es/79350b/barco-mastil/375_142.jpeg"
+           alt="China ha fabricado tantos paneles solares y eólicas que está cambiando cómo el resto del mundo genera electricidad, aunque ella siga quemando más carbón que nadie"
+           src="https://i.blogs.es/f76d61/paneles-solares-y-eolicas/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/ingeniero-espanol-ha-creado-mastil-que-convierte-viento-olas-electricidad-su-invento-puede-ser-principio-fin-diesel-barcos">Un ingeniero español ha creado un mástil que convierte viento y olas en electricidad. Su invento puede ser el principio del fin del diésel en los barcos</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/china-ha-inundado-mundo-paneles-solares-eolicas-que-ha-iniciado-fin-energias-fosiles">China ha fabricado tantos paneles solares y eólicas que está cambiando cómo el resto del mundo genera electricidad, aunque ella siga quemando más carbón que nadie</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/coches-barcos-dron-hidrogeno-verde-pone-a-sevilla-mapa-mundial-aviacion-emisiones">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/presa-grande-mundo-ha-desplazado-a-1-4-millones-personas-hace-que-dias-sean-cortos-leccion-ingenieria-china">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/83e43e/dron2-1-/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/83e43e/dron2-1-/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/83e43e/dron2-1-/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/83e43e/dron2-1-/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/83e43e/dron2-1-/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/23890c/presa-china/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/23890c/presa-china/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/23890c/presa-china/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/23890c/presa-china/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/23890c/presa-china/375_142.jpeg" width="375" height="142">
           <img
-           alt="Ni en coches, ni en barcos: un dron con hidrógeno verde pone a Sevilla en el mapa mundial de la aviación sin emisiones"
-           src="https://i.blogs.es/83e43e/dron2-1-/375_142.jpeg"
+           alt="La presa más grande del mundo ha desplazado a 1,4 millones de personas y hace que los días sean más cortos. Es una lección de ingeniería de China "
+           src="https://i.blogs.es/23890c/presa-china/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/coches-barcos-dron-hidrogeno-verde-pone-a-sevilla-mapa-mundial-aviacion-emisiones">Ni en coches, ni en barcos: un dron con hidrógeno verde pone a Sevilla en el mapa mundial de la aviación sin emisiones</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/presa-grande-mundo-ha-desplazado-a-1-4-millones-personas-hace-que-dias-sean-cortos-leccion-ingenieria-china">La presa más grande del mundo ha desplazado a 1,4 millones de personas y hace que los días sean más cortos. Es una lección de ingeniería de China </a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/muro-invisible-transicion-energetica-espana-produce-electricidad-limpia-que-nunca-no-aprovecha-factura-luz-no-baja">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/no-solo-hace-calor-coches-oscuros-aparcados-elevan-temperatura-aire-ciudades-casi-2oc-estudio">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/b5f7e3/paneles-solares-03/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/84e514/pixabay/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/84e514/pixabay/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/84e514/pixabay/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/84e514/pixabay/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/84e514/pixabay/375_142.jpeg" width="375" height="142">
           <img
-           alt="El muro invisible de la transición energética: España produce más electricidad limpia que nunca, pero no la aprovecha y la factura de la luz no baja"
-           src="https://i.blogs.es/b5f7e3/paneles-solares-03/375_142.jpeg"
+           alt="No solo hace más calor, los coches oscuros aparcados elevan la temperatura del aire en las ciudades casi 2ºC, según un estudio "
+           src="https://i.blogs.es/84e514/pixabay/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/muro-invisible-transicion-energetica-espana-produce-electricidad-limpia-que-nunca-no-aprovecha-factura-luz-no-baja">El muro invisible de la transición energética: España produce más electricidad limpia que nunca, pero no la aprovecha y la factura de la luz no baja</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/no-solo-hace-calor-coches-oscuros-aparcados-elevan-temperatura-aire-ciudades-casi-2oc-estudio">No solo hace más calor, los coches oscuros aparcados elevan la temperatura del aire en las ciudades casi 2ºC, según un estudio </a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/borren-sus-correos-antiguos-sus-fotos-nube-llamativa-solucion-reino-unido-para-ahorrar-agua-sus-peores-sequias">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/futuro-movimiento/moto-furgoneta-vietnam-paquetes-rapidos-amazon-llegan-volando-lancha-dia-que-pides">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/46cb59/delivery-ok/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/46cb59/delivery-ok/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/46cb59/delivery-ok/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/46cb59/delivery-ok/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/46cb59/delivery-ok/375_142.jpeg" width="375" height="142">
           <img
-           alt="&quot;Borren sus correos antiguos y sus fotos de la nube&quot;: la llamativa solución de Reino Unido para ahorrar agua en una de sus peores sequías"
-           src="https://i.blogs.es/cd4bc2/sequia-reino-unido-borrar-emails/375_142.jpeg"
+           alt="Ni en moto ni en furgoneta: en Vietnam los paquetes más rápidos de Amazon llegan volando en lancha el mismo día que los pides"
+           src="https://i.blogs.es/46cb59/delivery-ok/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/borren-sus-correos-antiguos-sus-fotos-nube-llamativa-solucion-reino-unido-para-ahorrar-agua-sus-peores-sequias">"Borren sus correos antiguos y sus fotos de la nube": la llamativa solución de Reino Unido para ahorrar agua en una de sus peores sequías</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/futuro-movimiento/moto-furgoneta-vietnam-paquetes-rapidos-amazon-llegan-volando-lancha-dia-que-pides">Ni en moto ni en furgoneta: en Vietnam los paquetes más rápidos de Amazon llegan volando en lancha el mismo día que los pides</a></h3>
        </li>
            </ul>
     </div>
@@ -1139,17 +999,17 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
    </aside>
 
       <div class="section-recent-list js-s4">
-          <article class="recent-abstract abstract-article" data-post-id="331129">
+          <article class="recent-abstract abstract-article" data-post-id="331400">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/tesla/pago-20-000-euros-extras-tesla-cybertruck-que-nunca-llegaron-ahora-ha-demandando-a-marca-elon-musk">
+  <a href="https://www.motorpasion.com/observatorio-motorpasion/ventas-coches-electricos-se-disparan-todo-mundo-culpa-no-solo-china-europa-estamos-comprando-enchufables-que-nunca">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/fc4706/tesla-cybertruck-luces-techo/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/fc4706/tesla-cybertruck-luces-techo/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/fc4706/tesla-cybertruck-luces-techo/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/b7c2d8/coche-electrico-5/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/b7c2d8/coche-electrico-5/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/b7c2d8/coche-electrico-5/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="Pagó 20.000 euros por extras de la Tesla Cybertruck que nunca llegaron. Ahora ha demandando a la marca de Elon Musk"
-   src="https://i.blogs.es/fc4706/tesla-cybertruck-luces-techo/200_200.jpeg"
+   alt="Las ventas de coches eléctricos se disparan en todo el mundo. La culpa no solo es de China: en Europa estamos comprando más enchufables que nunca"
+   src="https://i.blogs.es/b7c2d8/coche-electrico-5/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -1160,132 +1020,130 @@ if(Didomi.getUserStatusForVendor(77) == undefined){
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/tesla/pago-20-000-euros-extras-tesla-cybertruck-que-nunca-llegaron-ahora-ha-demandando-a-marca-elon-musk">Pagó 20.000 euros por extras de la Tesla Cybertruck que nunca llegaron. Ahora ha demandando a la marca de Elon Musk</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/tesla">Tesla</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/observatorio-motorpasion/ventas-coches-electricos-se-disparan-todo-mundo-culpa-no-solo-china-europa-estamos-comprando-enchufables-que-nunca">Las ventas de coches eléctricos se disparan en todo el mundo. La culpa no solo es de China: en Europa estamos comprando más enchufables que nunca</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/observatorio-motorpasion">Observatorio Motorpasión</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>Supuestamente todas las Cybertruck Foundation Series incluían los mismos extras. La realidad ha sido diferente.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/tesla/pago-20-000-euros-extras-tesla-cybertruck-que-nunca-llegaron-ahora-ha-demandando-a-marca-elon-musk">Leer más &raquo;
+                 <p>En agosto se vendieron 1,7 millones de coches enchufables en todo el mundo, de los cuales, 1,16 millones fueron eléctricos puros.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/observatorio-motorpasion/ventas-coches-electricos-se-disparan-todo-mundo-culpa-no-solo-china-europa-estamos-comprando-enchufables-que-nunca">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/tesla/pago-20-000-euros-extras-tesla-cybertruck-que-nunca-llegaron-ahora-ha-demandando-a-marca-elon-musk#to-comments">
-      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
+         <a class="abstract-comments" href="https://www.motorpasion.com/observatorio-motorpasion/ventas-coches-electricos-se-disparan-todo-mundo-culpa-no-solo-china-europa-estamos-comprando-enchufables-que-nunca#to-comments">
+      <span class="abstract-comment-count">7</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-22T18:00:46Z" class="abstract-date" datetime="2025-08-22T18:00:46Z">2025-08-22T18:00:46Z</time>
+             <a class="abstract-author" href="/autor/alvaro-ruiz">Álvaro Ruiz</a>
+        <time title="2025-09-12T15:00:46Z" class="abstract-date" datetime="2025-09-12T15:00:46Z">2025-09-12T15:00:46Z</time>
    </footer>
    </div>
 </article>
  
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-directoalpaladar" data-post-id="331130">
+          <article class="recent-abstract abstract-article" data-post-id="331395">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Fiat Panda ha sido un mito viviente, y ahora es uno de los coches eléctricos más baratos del mercado. Cuesta menos incluso que el BYD Dolphin Surf"
+   src="https://i.blogs.es/f72a0b/fiat-grande-panda-red/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana">Fiat Panda ha sido un mito viviente, y ahora es uno de los coches eléctricos más baratos del mercado. Cuesta menos incluso que el BYD Dolphin Surf</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/compra-coches">Compra de coches</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Fiat propone un icono reinventado para enfrentarse a otro icono, el R5 eléctrico.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana#to-comments">
+      <span class="abstract-comment-count">5</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/daniel-murias">Daniel Murias</a>
+        <time title="2025-09-12T12:16:45Z" class="abstract-date" datetime="2025-09-12T12:16:45Z">2025-09-12T12:16:45Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331392">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/audi/audi-se-ha-dado-cuenta-que-nadie-va-a-comprar-audi-rs-6-electrico-asi-que-han-cancelado">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/9d8807/audi-a6-avant-etron-concept/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/9d8807/audi-a6-avant-etron-concept/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/9d8807/audi-a6-avant-etron-concept/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Audi se ha dado cuenta que nadie va a comprar el Audi RS 6 eléctrico, así que lo han cancelado"
+   src="https://i.blogs.es/9d8807/audi-a6-avant-etron-concept/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/audi/audi-se-ha-dado-cuenta-que-nadie-va-a-comprar-audi-rs-6-electrico-asi-que-han-cancelado">Audi se ha dado cuenta que nadie va a comprar el Audi RS 6 eléctrico, así que lo han cancelado</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/audi">Audi</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Será el culmen de la sexta generación del Audi A6, mientras que la del Audi A6 e-tron se quedará en el S6. Quitarle el V8 biturbo al familiar más venerado tendría poco sentido.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/audi/audi-se-ha-dado-cuenta-que-nadie-va-a-comprar-audi-rs-6-electrico-asi-que-han-cancelado">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/audi/audi-se-ha-dado-cuenta-que-nadie-va-a-comprar-audi-rs-6-electrico-asi-que-han-cancelado#to-comments">
+      <span class="abstract-comment-count">5</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
+        <time title="2025-09-12T12:00:46Z" class="abstract-date" datetime="2025-09-12T12:00:46Z">2025-09-12T15:43:04Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-3djuegos" data-post-id="331398">
   <div class="abstract-figure">
      <div class="base-asset-image">
-    <a href="https://www.directoalpaladar.com/huerto/como-revivir-orquidea-tres-formas-devolverla-a-vida-1?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+    <a href="https://www.3djuegos.com/juegos/dd-neverwinter-nights-2-enhanced-edition/noticias/20-anos-despues-sigue-siendo-uno-mejores-rpg-fantasia-historia-tambien-uno-olvidados-desgracia-su-remaster-no-ayuda?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
      <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/adf6aa/orquidea/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/adf6aa/orquidea/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/adf6aa/orquidea/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/adf6aa/orquidea/200_200.jpeg" alt="Cómo revivir una orquídea: tres formas de devolverla a la vida" width="200" height="200">
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/f4b494/original/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/f4b494/original/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/f4b494/original/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/f4b494/original/200_200.jpeg" alt="No sé quién tuvo la brillante idea de ponerles a cargo de uno de los mejores RPG de fantasía de la historia, y ha ocurrido lo que más temía" width="200" height="200">
      </picture>
     </a>
    </div>
      </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.directoalpaladar.com/huerto/como-revivir-orquidea-tres-formas-devolverla-a-vida-1?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Cómo revivir una orquídea: tres formas de devolverla a la vida</a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.directoalpaladar.com">Directo al Paladar</a>
+   <h2 class="abstract-title"><a href="https://www.3djuegos.com/juegos/dd-neverwinter-nights-2-enhanced-edition/noticias/20-anos-despues-sigue-siendo-uno-mejores-rpg-fantasia-historia-tambien-uno-olvidados-desgracia-su-remaster-no-ayuda?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">No sé quién tuvo la brillante idea de ponerles a cargo de uno de los mejores RPG de fantasía de la historia, y ha ocurrido lo que más temía</a></h2>
+        <a class="abstract-taxonomy m-crosspost" href="https://www.3djuegos.com">3DJuegos</a>
      </header>
       <div class="abstract-excerpt">
-        <p>Bonitas y poderosas, las orquídeas son plantas algo delicadas de cuidar y cuando las atenciones disminuyen empiezan a resentirse y a ir a peor poco a poco, entrando en fase de vía muerta con el devenir de los días.
-
-Sin embargo, son muchas...</p>
-   <a class="abstract-link-more" href="https://www.directoalpaladar.com/huerto/como-revivir-orquidea-tres-formas-devolverla-a-vida-1?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+        <p>Neverwinter Nights 2: Enhanced Edition nos permite redescubrir todo un clásico del rol, pero también con su lado más negativo</p>
+   <a class="abstract-link-more" href="https://www.3djuegos.com/juegos/dd-neverwinter-nights-2-enhanced-edition/noticias/20-anos-despues-sigue-siendo-uno-mejores-rpg-fantasia-historia-tambien-uno-olvidados-desgracia-su-remaster-no-ayuda?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
   </a>
     </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.directoalpaladar.com/huerto/como-revivir-orquidea-tres-formas-devolverla-a-vida-1?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+         <a class="abstract-comments" href="https://www.3djuegos.com/juegos/dd-neverwinter-nights-2-enhanced-edition/noticias/20-anos-despues-sigue-siendo-uno-mejores-rpg-fantasia-historia-tambien-uno-olvidados-desgracia-su-remaster-no-ayuda?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
       <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-            <time title="2025-08-22T19:50:23Z" class="abstract-date" datetime="2025-08-22T19:50:23Z">2025-08-22T19:50:23Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331124">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/formula1/alpine-va-camino-batir-record-insolito-nunca-antes-peor-equipo-formula-1-habia-sido-bueno">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/b76c0a/colapinto-hungria-f1-2025/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/b76c0a/colapinto-hungria-f1-2025/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/b76c0a/colapinto-hungria-f1-2025/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="Alpine va camino de batir un récord insólito: nunca antes el peor equipo de la Fórmula 1 había sido tan bueno "
-   src="https://i.blogs.es/b76c0a/colapinto-hungria-f1-2025/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/formula1/alpine-va-camino-batir-record-insolito-nunca-antes-peor-equipo-formula-1-habia-sido-bueno">Alpine va camino de batir un récord insólito: nunca antes el peor equipo de la Fórmula 1 había sido tan bueno </a></h2>
-            <a class="abstract-taxonomy" href="/categoria/formula1">Fórmula1</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>Nunca un colista superó los 20 puntos que lleva Alpine tras solo catorce Grandes Premios.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/formula1/alpine-va-camino-batir-record-insolito-nunca-antes-peor-equipo-formula-1-habia-sido-bueno">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/formula1/alpine-va-camino-batir-record-insolito-nunca-antes-peor-equipo-formula-1-habia-sido-bueno#to-comments">
-      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/roberto-rodriguez">Roberto Montijo</a>
-        <time title="2025-08-22T13:00:46Z" class="abstract-date" datetime="2025-08-22T13:00:46Z">2025-08-22T13:00:46Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331123">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/observatorio-motorpasion/coches-electricos-baratos-autonomia-que-puedes-comprar-espana-ocu">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/7d1ab1/peugeot-e-208-electrico/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/7d1ab1/peugeot-e-208-electrico/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/7d1ab1/peugeot-e-208-electrico/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="Los coches eléctricos más baratos y con más autonomía que puedes comprar en España, según la OCU"
-   src="https://i.blogs.es/7d1ab1/peugeot-e-208-electrico/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/observatorio-motorpasion/coches-electricos-baratos-autonomia-que-puedes-comprar-espana-ocu">Los coches eléctricos más baratos y con más autonomía que puedes comprar en España, según la OCU</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/observatorio-motorpasion">Observatorio Motorpasión</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>La organización de consumidores analiza los coches con mejor relación autonomía-precio del mercado.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/observatorio-motorpasion/coches-electricos-baratos-autonomia-que-puedes-comprar-espana-ocu">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/observatorio-motorpasion/coches-electricos-baratos-autonomia-que-puedes-comprar-espana-ocu#to-comments">
-      <span class="abstract-comment-count">4</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-22T11:00:46Z" class="abstract-date" datetime="2025-08-22T11:00:46Z">2025-08-22T11:00:46Z</time>
+            <time title="2025-09-12T12:03:27Z" class="abstract-date" datetime="2025-09-12T12:03:27Z">2025-09-12T12:03:27Z</time>
    </footer>
    </div>
 </article>
@@ -1326,76 +1184,76 @@ Sin embargo, son muchas...</p>
     <div class="section-cross-content">
      <ul class="section-cross-content-list">
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/kia-sportage-2025-precio">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/873c13/kia-sportage/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/873c13/kia-sportage/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/873c13/kia-sportage/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/873c13/kia-sportage/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/873c13/kia-sportage/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/375_142.jpeg" width="375" height="142">
           <img
-           alt="El SUV más vendido de Kia ya tiene precios: el nuevo Kia Sportage parte de menos de 36.000 euros para plantar cara a los Tucson, Tiguan o 3008"
-           src="https://i.blogs.es/873c13/kia-sportage/375_142.jpeg"
+           alt="Conocemos el Kia PV5: un monovolumen eléctrico que no es más grande por fuera que un SUV, pero con muchísimo más espacio por dentro"
+           src="https://i.blogs.es/9d7dfb/kia-pv5-passenger-2025-07/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/kia-sportage-2025-precio">El SUV más vendido de Kia ya tiene precios: el nuevo Kia Sportage parte de menos de 36.000 euros para plantar cara a los Tucson, Tiguan o 3008</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-primer-contacto">Conocemos el Kia PV5: un monovolumen eléctrico que no es más grande por fuera que un SUV, pero con muchísimo más espacio por dentro</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/coches-vendidos-espana-julio-2025">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/4ede75/sandero/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/4ede75/sandero/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/4ede75/sandero/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/4ede75/sandero/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/4ede75/sandero/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/f72a0b/fiat-grande-panda-red/375_142.jpeg" width="375" height="142">
           <img
-           alt="Julio confirma que los coches más vendidos en España son baratos y de gasolina: el Dacia Sandero sigue imbatible y Toyota manda en marcas"
-           src="https://i.blogs.es/4ede75/sandero/375_142.jpeg"
+           alt="Fiat Panda ha sido un mito viviente, y ahora es uno de los coches eléctricos más baratos del mercado. Cuesta menos incluso que el BYD Dolphin Surf"
+           src="https://i.blogs.es/f72a0b/fiat-grande-panda-red/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/coches-vendidos-espana-julio-2025">Julio confirma que los coches más vendidos en España son baratos y de gasolina: el Dacia Sandero sigue imbatible y Toyota manda en marcas</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/fiat-grande-panda-electrico-precios-espana">Fiat Panda ha sido un mito viviente, y ahora es uno de los coches eléctricos más baratos del mercado. Cuesta menos incluso que el BYD Dolphin Surf</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-precio">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/kia-ev5-2026-primer-contacto">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/c42f14/kia-2/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/c42f14/kia-2/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/c42f14/kia-2/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/c42f14/kia-2/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/c42f14/kia-2/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b1dd61/kia-ev6-2026-08/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/b1dd61/kia-ev6-2026-08/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/b1dd61/kia-ev6-2026-08/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/b1dd61/kia-ev6-2026-08/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/b1dd61/kia-ev6-2026-08/375_142.jpeg" width="375" height="142">
           <img
-           alt="El Kia PV5 ya tiene precios en España: una furgoneta eléctrica modular casi del mismo tamaño que la ID.Buzz, pero que cuesta casi la mitad"
-           src="https://i.blogs.es/c42f14/kia-2/375_142.jpeg"
+           alt="Conocemos el Kia EV5: un espacioso SUV eléctrico que copia la receta del Kia EV3 en formato grande para dar guerra al Tesla Model Y"
+           src="https://i.blogs.es/b1dd61/kia-ev6-2026-08/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/kia-pv5-2025-precio">El Kia PV5 ya tiene precios en España: una furgoneta eléctrica modular casi del mismo tamaño que la ID.Buzz, pero que cuesta casi la mitad</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/kia-ev5-2026-primer-contacto">Conocemos el Kia EV5: un espacioso SUV eléctrico que copia la receta del Kia EV3 en formato grande para dar guerra al Tesla Model Y</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/tercer-coche-electrico-chino-stellantis-suv-compacto-fabricado-zaragoza-costara-29-900-euros">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/compra-coches/bmw-ix3-2026-precio">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/04d61b/leapmotor_b108/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/04d61b/leapmotor_b108/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/04d61b/leapmotor_b108/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/04d61b/leapmotor_b108/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/04d61b/leapmotor_b108/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/4de407/bmw-ix3-2026-0/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/4de407/bmw-ix3-2026-0/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/4de407/bmw-ix3-2026-0/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/4de407/bmw-ix3-2026-0/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/4de407/bmw-ix3-2026-0/375_142.jpeg" width="375" height="142">
           <img
-           alt="El nuevo SUV eléctrico de Stellantis llega a Europa por menos de 30.000 euros. Es chino, pero podría fabricarse en Zaragoza"
-           src="https://i.blogs.es/04d61b/leapmotor_b108/375_142.jpeg"
+           alt="El BMW iX3 ya tiene precio en España: es mucho más barato que su rival de Audi y cuesta lo mismo que el BMW X3 con motores de combustión"
+           src="https://i.blogs.es/4de407/bmw-ix3-2026-0/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/tercer-coche-electrico-chino-stellantis-suv-compacto-fabricado-zaragoza-costara-29-900-euros">El nuevo SUV eléctrico de Stellantis llega a Europa por menos de 30.000 euros. Es chino, pero podría fabricarse en Zaragoza</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/compra-coches/bmw-ix3-2026-precio">El BMW iX3 ya tiene precio en España: es mucho más barato que su rival de Audi y cuesta lo mismo que el BMW X3 con motores de combustión</a></h3>
        </li>
            </ul>
     </div>
@@ -1643,49 +1501,49 @@ Sin embargo, son muchas...</p>
  </aside>
 
       <div class="section-recent-list js-s4">
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-trendencias" data-post-id="331128">
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-motorpasionmoto" data-post-id="331397">
   <div class="abstract-figure">
      <div class="base-asset-image">
-    <a href="https://www.trendencias.com/viajes/pueblo-pesquero-galicia-alma-medieval-marisco-excepcional-turistas-se-van-a-sanxenxo?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+    <a href="https://www.motorpasionmoto.com/deportivas/suzuki-se-acaba-sacar-manga-moto-bonita-historia-japonesa-rapida-no-tiene-sentido?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
      <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/ecff5a/viajes-pueblos-galicia-bonitos-sin-turistas-playa-tranquilos/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/ecff5a/viajes-pueblos-galicia-bonitos-sin-turistas-playa-tranquilos/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/ecff5a/viajes-pueblos-galicia-bonitos-sin-turistas-playa-tranquilos/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/ecff5a/viajes-pueblos-galicia-bonitos-sin-turistas-playa-tranquilos/200_200.jpeg" alt="Buen marisco y un casco antiguo medieval: el pueblo pesquero más bonito de Galicia que supera a Sanxenxo" width="200" height="200">
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/743a59/hayabusa-2/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/743a59/hayabusa-2/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/743a59/hayabusa-2/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/743a59/hayabusa-2/200_200.jpeg" alt="Suzuki se acaba de sacar de la manga la moto más bonita del mundo. Es la japonesa más rápida, y no tiene sentido " width="200" height="200">
      </picture>
     </a>
    </div>
      </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.trendencias.com/viajes/pueblo-pesquero-galicia-alma-medieval-marisco-excepcional-turistas-se-van-a-sanxenxo?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Buen marisco y un casco antiguo medieval: el pueblo pesquero más bonito de Galicia que supera a Sanxenxo</a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.trendencias.com">Trendencias</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasionmoto.com/deportivas/suzuki-se-acaba-sacar-manga-moto-bonita-historia-japonesa-rapida-no-tiene-sentido?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Suzuki se acaba de sacar de la manga la moto más bonita del mundo. Es la japonesa más rápida, y no tiene sentido </a></h2>
+        <a class="abstract-taxonomy m-crosspost" href="https://www.motorpasionmoto.com">Motorpasión Moto</a>
      </header>
       <div class="abstract-excerpt">
-        <p>Fue fundado en el siglo XIII y ha vivido ligado al mar hasta día de hoy</p>
-   <a class="abstract-link-more" href="https://www.trendencias.com/viajes/pueblo-pesquero-galicia-alma-medieval-marisco-excepcional-turistas-se-van-a-sanxenxo?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+        <p>Suzuki ha vestido a su mito con el traje más elegante de su historia. La Hayabusa Edición Especial llega con detalles que la convierten en la versión más bella.</p>
+   <a class="abstract-link-more" href="https://www.motorpasionmoto.com/deportivas/suzuki-se-acaba-sacar-manga-moto-bonita-historia-japonesa-rapida-no-tiene-sentido?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
   </a>
     </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.trendencias.com/viajes/pueblo-pesquero-galicia-alma-medieval-marisco-excepcional-turistas-se-van-a-sanxenxo?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+         <a class="abstract-comments" href="https://www.motorpasionmoto.com/deportivas/suzuki-se-acaba-sacar-manga-moto-bonita-historia-japonesa-rapida-no-tiene-sentido?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
       <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-            <time title="2025-08-22T12:06:07Z" class="abstract-date" datetime="2025-08-22T12:06:07Z">2025-08-22T12:06:07Z</time>
+            <time title="2025-09-12T12:03:00Z" class="abstract-date" datetime="2025-09-12T12:03:00Z">2025-09-12T12:03:00Z</time>
    </footer>
    </div>
 </article>
  
-          <article class="recent-abstract abstract-article" data-post-id="331090">
+          <article class="recent-abstract abstract-article" data-post-id="331394">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/clasicos/dominos-repartio-pizzas-estos-triciclos-futuristas-80-uno-acaba-venderse-que-cuesta-toyota-corolla-cupra-formentor">
+  <a href="https://www.motorpasion.com/industria/fabricantes-toda-vida-necesitan-tecnologia-china-para-seguir-carrera-coche-electrico-asi-que-china-ha-dado-clave-exito-venderles-baterias-motores-marca-blanca">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/51c8c3/pizza-rocket-apertura-2/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/51c8c3/pizza-rocket-apertura-2/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/51c8c3/pizza-rocket-apertura-2/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/c63c04/audi-e5-sportback-2/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/c63c04/audi-e5-sportback-2/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/c63c04/audi-e5-sportback-2/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="Domino’s repartió pizzas con estos triciclos futuristas en los 80: uno acaba de venderse por lo que cuesta un Toyota Corolla o un CUPRA Formentor"
-   src="https://i.blogs.es/51c8c3/pizza-rocket-apertura-2/200_200.jpeg"
+   alt="Los fabricantes de toda la vida necesitan la tecnología china para seguir en la carrera del coche eléctrico, así que China ha dado con la clave del éxito: venderles baterías y motores de marca blanca "
+   src="https://i.blogs.es/c63c04/audi-e5-sportback-2/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -1696,67 +1554,74 @@ Sin embargo, son muchas...</p>
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/clasicos/dominos-repartio-pizzas-estos-triciclos-futuristas-80-uno-acaba-venderse-que-cuesta-toyota-corolla-cupra-formentor">Domino’s repartió pizzas con estos triciclos futuristas en los 80: uno acaba de venderse por lo que cuesta un Toyota Corolla o un CUPRA Formentor</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/clasicos">Clásicos</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/industria/fabricantes-toda-vida-necesitan-tecnologia-china-para-seguir-carrera-coche-electrico-asi-que-china-ha-dado-clave-exito-venderles-baterias-motores-marca-blanca">Los fabricantes de toda la vida necesitan la tecnología china para seguir en la carrera del coche eléctrico, así que China ha dado con la clave del éxito: venderles baterías y motores de marca blanca </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/industria">Industria</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>El Tritan A2, con su cúpula deslizante y su calentador de pizzas integrado, fue uno de los experimentos más excéntricos de la cadena en 1985.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/clasicos/dominos-repartio-pizzas-estos-triciclos-futuristas-80-uno-acaba-venderse-que-cuesta-toyota-corolla-cupra-formentor">Leer más &raquo;
+                 <p>Luchar contra las marcas chinas en materia de movilidad eléctrica es tan complicado para los fabricantes tradicionales que muchos están optando por comprar directamente la tecnología a China.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/industria/fabricantes-toda-vida-necesitan-tecnologia-china-para-seguir-carrera-coche-electrico-asi-que-china-ha-dado-clave-exito-venderles-baterias-motores-marca-blanca">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/clasicos/dominos-repartio-pizzas-estos-triciclos-futuristas-80-uno-acaba-venderse-que-cuesta-toyota-corolla-cupra-formentor#to-comments">
+         <a class="abstract-comments" href="https://www.motorpasion.com/industria/fabricantes-toda-vida-necesitan-tecnologia-china-para-seguir-carrera-coche-electrico-asi-que-china-ha-dado-clave-exito-venderles-baterias-motores-marca-blanca#to-comments">
+      <span class="abstract-comment-count">2</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/alvaro-ruiz">Álvaro Ruiz</a>
+        <time title="2025-09-12T11:00:46Z" class="abstract-date" datetime="2025-09-12T11:00:46Z">2025-09-12T11:00:46Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331371">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="El volante de tu coche vibra, sobre todo en autovía. Puede ser por uno de estos cinco motivos "
+   src="https://i.blogs.es/b034ee/vibraciones-2_1/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos">El volante de tu coche vibra, sobre todo en autovía. Puede ser por uno de estos cinco motivos </a></h2>
+            <a class="abstract-taxonomy" href="/categoria/revision">A revisión</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Las vibraciones en el coche son síntoma de que algo no va bien, a veces es muy sencillo acabar con ellas, pero otras puede ser más complicado.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos#to-comments">
       <span class="abstract-comment-count">4</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-             <a class="abstract-author" href="/autor/irene-mendoza">Irene Mendoza</a>
-        <time title="2025-08-22T09:00:46Z" class="abstract-date" datetime="2025-08-22T09:00:46Z">2025-08-22T09:00:46Z</time>
+             <a class="abstract-author" href="/autor/alvaro-ruiz">Álvaro Ruiz</a>
+        <time title="2025-09-12T08:00:46Z" class="abstract-date" datetime="2025-09-12T08:00:46Z">2025-09-12T08:00:46Z</time>
    </footer>
    </div>
 </article>
  
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-3djuegos" data-post-id="331126">
-  <div class="abstract-figure">
-     <div class="base-asset-image">
-    <a href="https://www.3djuegos.com/tv-series/noticias/ocho-dias-llega-a-hbo-max-serie-perfecta-para-fans-vikingos-juego-tronos-rey-conquistador-fecha-su-estreno-espana?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
-     <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/6a61d3/king-conqueror/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/6a61d3/king-conqueror/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/6a61d3/king-conqueror/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/6a61d3/king-conqueror/200_200.jpeg" alt="En ocho días llega a HBO Max una serie perfecta para los fans de Vikingos y Juego de Tronos. Rey y Conquistador fecha su estreno en España " width="200" height="200">
-     </picture>
-    </a>
-   </div>
-     </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.3djuegos.com/tv-series/noticias/ocho-dias-llega-a-hbo-max-serie-perfecta-para-fans-vikingos-juego-tronos-rey-conquistador-fecha-su-estreno-espana?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">En ocho días llega a HBO Max una serie perfecta para los fans de Vikingos y Juego de Tronos. Rey y Conquistador fecha su estreno en España </a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.3djuegos.com">3DJuegos</a>
-     </header>
-      <div class="abstract-excerpt">
-        <p>No la esperábamos tan pronto, pero el servicio de Warner Bros. en España nos acaba de dar un gran alegrón con este drama histórico de la BBC</p>
-   <a class="abstract-link-more" href="https://www.3djuegos.com/tv-series/noticias/ocho-dias-llega-a-hbo-max-serie-perfecta-para-fans-vikingos-juego-tronos-rey-conquistador-fecha-su-estreno-espana?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
-  </a>
-    </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.3djuegos.com/tv-series/noticias/ocho-dias-llega-a-hbo-max-serie-perfecta-para-fans-vikingos-juego-tronos-rey-conquistador-fecha-su-estreno-espana?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-            <time title="2025-08-22T09:35:09Z" class="abstract-date" datetime="2025-08-22T09:35:09Z">2025-08-22T09:35:09Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="330884">
+          <article class="recent-abstract abstract-article" data-post-id="330822">
   <div class="abstract-figure">
    <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/formula1/sordida-historia-taki-inoue-unico-piloto-f1-que-fue-atropellado-dos-veces-safety-car-1">
+  <a href="https://www.motorpasion.com/superlujo/mantener-bugatti-puede-arruinarte-no-eliges-bien-taller-al-que-llevarlo-le-cobraban-11-000-euros-arreglar-boton-al-final-le-costo-cerveza">
        <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/861224/cats/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/861224/cats/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/861224/cats/200_200.jpeg" width="200" height="200"/>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/299fef/vyron-apertura/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/299fef/vyron-apertura/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/299fef/vyron-apertura/200_200.jpeg" width="200" height="200"/>
       <img
-   alt="La sórdida historia de Taki Inoue, el único piloto de F1 que fue atropellado dos veces por el Safety Car  "
-   src="https://i.blogs.es/861224/cats/200_200.jpeg"
+   alt="Mantener un Bugatti puede arruinarte si no eliges bien el taller al que llevarlo: le cobraban 11.000 euros por arreglar un botón. Y al final le costó una cerveza"
+   src="https://i.blogs.es/299fef/vyron-apertura/200_200.jpeg"
    width="200"
    height="200"
   >
@@ -1767,20 +1632,20 @@ Sin embargo, son muchas...</p>
    </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/formula1/sordida-historia-taki-inoue-unico-piloto-f1-que-fue-atropellado-dos-veces-safety-car-1">La sórdida historia de Taki Inoue, el único piloto de F1 que fue atropellado dos veces por el Safety Car  </a></h2>
-            <a class="abstract-taxonomy" href="/categoria/formula1">Fórmula1</a>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/superlujo/mantener-bugatti-puede-arruinarte-no-eliges-bien-taller-al-que-llevarlo-le-cobraban-11-000-euros-arreglar-boton-al-final-le-costo-cerveza">Mantener un Bugatti puede arruinarte si no eliges bien el taller al que llevarlo: le cobraban 11.000 euros por arreglar un botón. Y al final le costó una cerveza</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/superlujo">Superlujo</a>
          </header>
       <div class="abstract-excerpt">
-                 <p>Taki Inoue solo corrió 19 carreras de Fórmula 1. El coche de seguridad le atropelló en dos de ellas.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/formula1/sordida-historia-taki-inoue-unico-piloto-f1-que-fue-atropellado-dos-veces-safety-car-1">Leer más &raquo;
+                 <p>El mantenimiento de un Bugatti puede alcanzar cifras absurdas si recurres al servicio oficial: este caso real demuestra por qué buscar alternativas puede ahorrarte miles de euros.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/superlujo/mantener-bugatti-puede-arruinarte-no-eliges-bien-taller-al-que-llevarlo-le-cobraban-11-000-euros-arreglar-boton-al-final-le-costo-cerveza">Leer más &raquo;
             </a>
          </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/formula1/sordida-historia-taki-inoue-unico-piloto-f1-que-fue-atropellado-dos-veces-safety-car-1#to-comments">
-      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
+         <a class="abstract-comments" href="https://www.motorpasion.com/superlujo/mantener-bugatti-puede-arruinarte-no-eliges-bien-taller-al-que-llevarlo-le-cobraban-11-000-euros-arreglar-boton-al-final-le-costo-cerveza#to-comments">
+      <span class="abstract-comment-count">10</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-             <a class="abstract-author" href="/autor/roberto-rodriguez">Roberto Montijo</a>
-        <time title="2025-08-22T07:00:46Z" class="abstract-date" datetime="2025-08-22T07:00:46Z">2025-08-22T07:00:46Z</time>
+             <a class="abstract-author" href="/autor/irene-mendoza">Irene Mendoza</a>
+        <time title="2025-09-12T07:00:46Z" class="abstract-date" datetime="2025-09-12T07:00:46Z">2025-09-12T07:00:46Z</time>
    </footer>
    </div>
 </article>
@@ -1817,76 +1682,76 @@ Sin embargo, son muchas...</p>
     <div class="section-cross-content">
      <ul class="section-cross-content-list">
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/aceite-alto-kilometraje-no-mito-timo-que-que-hace-al-motor-cuando-deberias-usarlo-tu-coche">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/f78df1/aceite-alto-kilometraje/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/f78df1/aceite-alto-kilometraje/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/f78df1/aceite-alto-kilometraje/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/f78df1/aceite-alto-kilometraje/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/f78df1/aceite-alto-kilometraje/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/b034ee/vibraciones-2_1/375_142.jpeg" width="375" height="142">
           <img
-           alt="El aceite de alto kilometraje no es ni un mito ni un timo: qué es, qué hace al motor y cuándo deberías usarlo en tu coche"
-           src="https://i.blogs.es/f78df1/aceite-alto-kilometraje/375_142.jpeg"
+           alt="El volante de tu coche vibra, sobre todo en autovía. Puede ser por uno de estos cinco motivos "
+           src="https://i.blogs.es/b034ee/vibraciones-2_1/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/aceite-alto-kilometraje-no-mito-timo-que-que-hace-al-motor-cuando-deberias-usarlo-tu-coche">El aceite de alto kilometraje no es ni un mito ni un timo: qué es, qué hace al motor y cuándo deberías usarlo en tu coche</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos">El volante de tu coche vibra, sobre todo en autovía. Puede ser por uno de estos cinco motivos </a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/este-experto-nos-ensena-sencillo-truco-para-conocer-estado-embrague-coche-evitar-caras-reparaciones">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/cuanto-tiempo-puedo-conducir-coche-testigo-aceite-encendido">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/5198fb/embrague-1350px/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/5198fb/embrague-1350px/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/5198fb/embrague-1350px/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/5198fb/embrague-1350px/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/5198fb/embrague-1350px/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/79730e/luz-aceite/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/79730e/luz-aceite/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/79730e/luz-aceite/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/79730e/luz-aceite/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/79730e/luz-aceite/375_142.jpeg" width="375" height="142">
           <img
-           alt="Este experto ha descubierto un sencillo truco para conocer el estado del embrague del coche y evitar caras reparaciones"
-           src="https://i.blogs.es/5198fb/embrague-1350px/375_142.jpeg"
+           alt="Cuánto tiempo puedo conducir el coche con el testigo de aceite encendido sin destruir el motor"
+           src="https://i.blogs.es/79730e/luz-aceite/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/este-experto-nos-ensena-sencillo-truco-para-conocer-estado-embrague-coche-evitar-caras-reparaciones">Este experto ha descubierto un sencillo truco para conocer el estado del embrague del coche y evitar caras reparaciones</a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/cuanto-tiempo-puedo-conducir-coche-testigo-aceite-encendido">Cuánto tiempo puedo conducir el coche con el testigo de aceite encendido sin destruir el motor</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/ojala-alguien-me-hubiera-dicho-que-no-hace-falta-gastar-30-euros-para-cambiar-limpiaparabrisas-mitad-puedes-cambiar-solo-gomas-amazon">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/que-importante-que-puertas-coches-no-tengan-holguras">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/966d1d/arrevi-limpias---victoria/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/966d1d/arrevi-limpias---victoria/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/966d1d/arrevi-limpias---victoria/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/966d1d/arrevi-limpias---victoria/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/966d1d/arrevi-limpias---victoria/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/375_142.jpeg" width="375" height="142">
           <img
-           alt="Ojalá alguien me hubiera dicho que no hace falta gastar 30 euros para cambiar los limpiaparabrisas. Por menos de la mitad puedes cambiar solo las gomas en Amazon "
-           src="https://i.blogs.es/966d1d/arrevi-limpias---victoria/375_142.jpeg"
+           alt="Por qué es importante que las puertas de los coches no tengan holguras"
+           src="https://i.blogs.es/4fbccd/por-que-es-importante-que-las-puertas-de-los-coches-no-tengan-holguras/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/ojala-alguien-me-hubiera-dicho-que-no-hace-falta-gastar-30-euros-para-cambiar-limpiaparabrisas-mitad-puedes-cambiar-solo-gomas-amazon">Ojalá alguien me hubiera dicho que no hace falta gastar 30 euros para cambiar los limpiaparabrisas. Por menos de la mitad puedes cambiar solo las gomas en Amazon </a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/que-importante-que-puertas-coches-no-tengan-holguras">Por qué es importante que las puertas de los coches no tengan holguras</a></h3>
        </li>
                     <li class="shortcut-article cross-shortcut">
-        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/casco-al-seguro-obligatorio-todo-que-vas-a-necesitar-para-conducir-tu-patinete-electrico-llevarte-multa">
+        <a class="shortcut-figure" href="https://www.motorpasion.com/revision/como-quitar-pegatinas-coche-danar-pintura-trucos-caseros-productos-milagro-que-nunca-debes-usar">
          <picture>
-          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/500_333.jpeg" width="500" height="333">
-          <source media="(min-width: 767px)" srcset="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/288_288.jpeg" width="288" height="288">
-          <source media="(min-width: 600px)" srcset="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/650_247.jpeg" width="650" height="247">
-          <source media="(min-width: 400px)" srcset="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/500_190.jpeg" width="500" height="190">
-          <source media="(min-width: 320px)" srcset="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/375_142.jpeg" width="375" height="142">
+          <source media="(min-width: 1023px)" srcset="https://i.blogs.es/91967d/coche-pegatona-toro/500_333.jpeg" width="500" height="333">
+          <source media="(min-width: 767px)" srcset="https://i.blogs.es/91967d/coche-pegatona-toro/288_288.jpeg" width="288" height="288">
+          <source media="(min-width: 600px)" srcset="https://i.blogs.es/91967d/coche-pegatona-toro/650_247.jpeg" width="650" height="247">
+          <source media="(min-width: 400px)" srcset="https://i.blogs.es/91967d/coche-pegatona-toro/500_190.jpeg" width="500" height="190">
+          <source media="(min-width: 320px)" srcset="https://i.blogs.es/91967d/coche-pegatona-toro/375_142.jpeg" width="375" height="142">
           <img
-           alt="Del casco al seguro obligatorio: todo lo que vas a necesitar para conducir tu patinete eléctrico sin llevarte una multa  "
-           src="https://i.blogs.es/a2d3e8/apertura---arrevi-patinete/375_142.jpeg"
+           alt="Cómo quitar pegatinas del coche sin destrozar la pintura: trucos caseros, productos milagro y lo que nunca debes usar"
+           src="https://i.blogs.es/91967d/coche-pegatona-toro/375_142.jpeg"
            width="375"
            height="142"
           >
          </picture>
         </a>
-        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/casco-al-seguro-obligatorio-todo-que-vas-a-necesitar-para-conducir-tu-patinete-electrico-llevarte-multa">Del casco al seguro obligatorio: todo lo que vas a necesitar para conducir tu patinete eléctrico sin llevarte una multa  </a></h3>
+        <h3 class="shortcut-title"><a href="https://www.motorpasion.com/revision/como-quitar-pegatinas-coche-danar-pintura-trucos-caseros-productos-milagro-que-nunca-debes-usar">Cómo quitar pegatinas del coche sin destrozar la pintura: trucos caseros, productos milagro y lo que nunca debes usar</a></h3>
        </li>
            </ul>
     </div>
@@ -1898,144 +1763,144 @@ Sin embargo, son muchas...</p>
  <div class="section-recent">
     <div class="section-recent-row">
       <div class="section-recent-list js-s4">
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-xataka" data-post-id="331122">
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-directoalpaladar" data-post-id="331391">
   <div class="abstract-figure">
      <div class="base-asset-image">
-    <a href="https://www.xataka.com/seleccion/solucion-a-falta-espacio-pc-pasa-buen-ssd-gran-capacidad-este-4-tb-puede-ser-eleccion-perfecta?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+    <a href="https://www.directoalpaladar.com/decoracion-de-cocinas/esto-que-arruina-bonito-diseno-cocina-super-facil-evitar?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
      <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/b6469f/oferta01/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/b6469f/oferta01/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/b6469f/oferta01/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/b6469f/oferta01/200_200.jpeg" alt="Más de 120.000 reseñas, 4 TB de capacidad y buen precio: este SSD Crucial es de las mejores ofertas del momento en almacenamiento" width="200" height="200">
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/c014f3/fotojet-6-/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/c014f3/fotojet-6-/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/c014f3/fotojet-6-/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/c014f3/fotojet-6-/200_200.jpeg" alt="Este gesto arruina cualquier diseño de cocina, por bueno que sea, y es super fácil de evitar" width="200" height="200">
      </picture>
     </a>
    </div>
      </div>
  <div class="abstract-content">
     <header>
-   <h2 class="abstract-title"><a href="https://www.xataka.com/seleccion/solucion-a-falta-espacio-pc-pasa-buen-ssd-gran-capacidad-este-4-tb-puede-ser-eleccion-perfecta?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Más de 120.000 reseñas, 4 TB de capacidad y buen precio: este SSD Crucial es de las mejores ofertas del momento en almacenamiento</a></h2>
-        <a class="abstract-taxonomy m-crosspost" href="https://www.xataka.com">Xataka</a>
-     </header>
-      <div class="abstract-excerpt">
-        <p>Suficiente espacio para olvidarnos de tener que volver a actualizar durante una temporada</p>
-   <a class="abstract-link-more" href="https://www.xataka.com/seleccion/solucion-a-falta-espacio-pc-pasa-buen-ssd-gran-capacidad-este-4-tb-puede-ser-eleccion-perfecta?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
-  </a>
-    </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.xataka.com/seleccion/solucion-a-falta-espacio-pc-pasa-buen-ssd-gran-capacidad-este-4-tb-puede-ser-eleccion-perfecta?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
-      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-            <time title="2025-08-22T07:48:18Z" class="abstract-date" datetime="2025-08-22T07:48:18Z">2025-08-22T07:48:18Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331100">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/cine-tv-juegos/segunda-juventud-coches-peliculas-miticas-se-han-convertido-joyas-pujas-hay-quien-paga-millonadas-ellos">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/dd1bcd/subasta-decenas-coches.peliculas/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/dd1bcd/subasta-decenas-coches.peliculas/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/dd1bcd/subasta-decenas-coches.peliculas/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="La segunda juventud de los coches de películas míticas. Se han convertido en las joyas de las pujas, y hay quien paga millonadas por ellos"
-   src="https://i.blogs.es/dd1bcd/subasta-decenas-coches.peliculas/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/cine-tv-juegos/segunda-juventud-coches-peliculas-miticas-se-han-convertido-joyas-pujas-hay-quien-paga-millonadas-ellos">La segunda juventud de los coches de películas míticas. Se han convertido en las joyas de las pujas, y hay quien paga millonadas por ellos</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/cine-tv-juegos">Cine, TV y juegos</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>Los subasta un museo de EEUU que no es cualquiera: está especializado en atrezo de películas de Hollywood. Hay pujas que ya superan los 30 millones de dólares.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/cine-tv-juegos/segunda-juventud-coches-peliculas-miticas-se-han-convertido-joyas-pujas-hay-quien-paga-millonadas-ellos">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/cine-tv-juegos/segunda-juventud-coches-peliculas-miticas-se-han-convertido-joyas-pujas-hay-quien-paga-millonadas-ellos#to-comments">
-      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-21T19:00:45Z" class="abstract-date" datetime="2025-08-21T19:00:45Z">2025-08-21T19:00:45Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article" data-post-id="331115">
-  <div class="abstract-figure">
-   <div class="base-asset-image">
-  <a href="https://www.motorpasion.com/coches-electricos/900-km-recargar-coche-electrico-ha-batido-otro-record-guinness-autonomia-tiene-truco">
-       <picture>
-        <source media="(min-width: 767px)" srcset="https://i.blogs.es/a55f72/polestar-3-suv-record-guinness-autonomia-01/500_333.jpeg" width="500" height="333"/>
-        <source media="(min-width: 450px)" srcset="https://i.blogs.es/a55f72/polestar-3-suv-record-guinness-autonomia-01/375_375.jpeg" width="375" height="375"/>
-        <source media="(min-width: 320px)" srcset="https://i.blogs.es/a55f72/polestar-3-suv-record-guinness-autonomia-01/200_200.jpeg" width="200" height="200"/>
-      <img
-   alt="Más de 900 km sin recargar. Un coche eléctrico ha batido otro récord Guinness de autonomía, pero hay trampa"
-   src="https://i.blogs.es/a55f72/polestar-3-suv-record-guinness-autonomia-01/200_200.jpeg"
-   width="200"
-   height="200"
-  >
- </picture>
-
-  </a>
- </div>
-   </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.motorpasion.com/coches-electricos/900-km-recargar-coche-electrico-ha-batido-otro-record-guinness-autonomia-tiene-truco">Más de 900 km sin recargar. Un coche eléctrico ha batido otro récord Guinness de autonomía, pero hay trampa</a></h2>
-            <a class="abstract-taxonomy" href="/categoria/coches-electricos">Coches eléctricos</a>
-         </header>
-      <div class="abstract-excerpt">
-                 <p>Completó 935,44 km solo parando para cambiar de conductor, sin recargar en ningún momento.</p>
-             <a class="abstract-link-more" href="https://www.motorpasion.com/coches-electricos/900-km-recargar-coche-electrico-ha-batido-otro-record-guinness-autonomia-tiene-truco">Leer más &raquo;
-            </a>
-         </div>
-       <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.motorpasion.com/coches-electricos/900-km-recargar-coche-electrico-ha-batido-otro-record-guinness-autonomia-tiene-truco#to-comments">
-      <span class="abstract-comment-count">5</span> <span class="abstract-comment-label">comentarios</span>
-     </a>
-             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
-        <time title="2025-08-21T17:00:46Z" class="abstract-date" datetime="2025-08-21T17:00:46Z">2025-08-22T10:16:59Z</time>
-   </footer>
-   </div>
-</article>
- 
-          <article class="recent-abstract abstract-article m-crosspost m-crosspost-directoalpaladar" data-post-id="331121">
-  <div class="abstract-figure">
-     <div class="base-asset-image">
-    <a href="https://www.directoalpaladar.com/limpieza-y-orden/espanola-revela-como-friegan-platos-ingleses-no-volveras-a-ver-igual-jamas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
-     <picture>
-      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/513a9a/platos/500_333.jpeg" width="500" height="333">
-      <source media="(min-width: 767px)" srcset="https://i.blogs.es/513a9a/platos/375_375.jpeg" width="375" height="375">
-      <source media="(min-width: 320px)" srcset="https://i.blogs.es/513a9a/platos/200_200.jpeg" width="200" height="200">
-      <img src="https://i.blogs.es/513a9a/platos/200_200.jpeg" alt="Una española recuerda cómo friegan los platos muchos ingleses: &quot;Aún me siguen sorprendiendo&quot;" width="200" height="200">
-     </picture>
-    </a>
-   </div>
-     </div>
- <div class="abstract-content">
-    <header>
-   <h2 class="abstract-title"><a href="https://www.directoalpaladar.com/limpieza-y-orden/espanola-revela-como-friegan-platos-ingleses-no-volveras-a-ver-igual-jamas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Una española recuerda cómo friegan los platos muchos ingleses: "Aún me siguen sorprendiendo"</a></h2>
+   <h2 class="abstract-title"><a href="https://www.directoalpaladar.com/decoracion-de-cocinas/esto-que-arruina-bonito-diseno-cocina-super-facil-evitar?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Este gesto arruina cualquier diseño de cocina, por bueno que sea, y es super fácil de evitar</a></h2>
         <a class="abstract-taxonomy m-crosspost" href="https://www.directoalpaladar.com">Directo al Paladar</a>
      </header>
       <div class="abstract-excerpt">
-        <p>En cada país, lavar platos es casi un ritual doméstico, y lo curioso es que varía tanto como las recetas de su cocina. Para algunos, el fregadero es un espacio donde todo se limpia y se enjuaga al detalle, con espuma abundante y agua...</p>
-   <a class="abstract-link-more" href="https://www.directoalpaladar.com/limpieza-y-orden/espanola-revela-como-friegan-platos-ingleses-no-volveras-a-ver-igual-jamas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+        <p>Hay cocinas que parecen sacadas de una revista de decoración y, sin embargo, terminan perdiendo todo su encanto por un detalle mínimo. A veces no es el color de los muebles ni la encimera mal escogida, sino un gesto cotidiano que pasa...</p>
+   <a class="abstract-link-more" href="https://www.directoalpaladar.com/decoracion-de-cocinas/esto-que-arruina-bonito-diseno-cocina-super-facil-evitar?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
   </a>
     </div>
        <footer class="abstract-byline">
-         <a class="abstract-comments" href="https://www.directoalpaladar.com/limpieza-y-orden/espanola-revela-como-friegan-platos-ingleses-no-volveras-a-ver-igual-jamas?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+         <a class="abstract-comments" href="https://www.directoalpaladar.com/decoracion-de-cocinas/esto-que-arruina-bonito-diseno-cocina-super-facil-evitar?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
       <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
      </a>
-            <time title="2025-08-21T18:35:37Z" class="abstract-date" datetime="2025-08-21T18:35:37Z">2025-08-21T18:35:37Z</time>
+            <time title="2025-09-12T07:37:54Z" class="abstract-date" datetime="2025-09-12T07:37:54Z">2025-09-12T07:37:54Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article m-crosspost m-crosspost-espinof" data-post-id="331390">
+  <div class="abstract-figure">
+     <div class="base-asset-image">
+    <a href="https://www.espinof.com/entretenimiento/cadena-perpetua-milla-verde-peliculas-favoritas-stephen-king-no-adaptan-ninguna-sus-obras?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">
+     <picture>
+      <source media="(min-width: 1023px)" srcset="https://i.blogs.es/93ba81/gettyimages-131859459-20-1-/500_333.jpeg" width="500" height="333">
+      <source media="(min-width: 767px)" srcset="https://i.blogs.es/93ba81/gettyimages-131859459-20-1-/375_375.jpeg" width="375" height="375">
+      <source media="(min-width: 320px)" srcset="https://i.blogs.es/93ba81/gettyimages-131859459-20-1-/200_200.jpeg" width="200" height="200">
+      <img src="https://i.blogs.es/93ba81/gettyimages-131859459-20-1-/200_200.jpeg" alt="Ni &#039;Cadena perpetua&#039; ni &#039;La milla verde&#039; ni &#039;El resplandor&#039;. Stephen King publica su lista con las 10 mejores películas de la historia" width="200" height="200">
+     </picture>
+    </a>
+   </div>
+     </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.espinof.com/entretenimiento/cadena-perpetua-milla-verde-peliculas-favoritas-stephen-king-no-adaptan-ninguna-sus-obras?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Ni 'Cadena perpetua' ni 'La milla verde' ni 'El resplandor'. Stephen King publica su lista con las 10 mejores películas de la historia</a></h2>
+        <a class="abstract-taxonomy m-crosspost" href="https://www.espinof.com">Espinof</a>
+     </header>
+      <div class="abstract-excerpt">
+        <p>El escritor ha ido más allá de propio universo literario</p>
+   <a class="abstract-link-more" href="https://www.espinof.com/entretenimiento/cadena-perpetua-milla-verde-peliculas-favoritas-stephen-king-no-adaptan-ninguna-sus-obras?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost">Leer más &raquo;
+  </a>
+    </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.espinof.com/entretenimiento/cadena-perpetua-milla-verde-peliculas-favoritas-stephen-king-no-adaptan-ninguna-sus-obras?utm_source=motorpasion&amp;utm_medium=network&amp;utm_campaign=repost#to-comments">
+      <span class="abstract-comment-count">0</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+            <time title="2025-09-12T07:37:53Z" class="abstract-date" datetime="2025-09-12T07:37:53Z">2025-09-12T07:37:53Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331379">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/cine-tv-juegos/deja-coche-coge-coche-han-inventado-biblioteca-publica-hot-wheels-no-te-dejes-todo-tu-dinero-coleccionar-coches">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/5d549e/biblioteca-hot-wheels/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/5d549e/biblioteca-hot-wheels/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/5d549e/biblioteca-hot-wheels/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="Deja un coche, coge un coche: la maravillosa biblioteca de intercambio de Hot Wheels que quiere ser tan popular como el &#039;bookcrossing&#039;"
+   src="https://i.blogs.es/5d549e/biblioteca-hot-wheels/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/cine-tv-juegos/deja-coche-coge-coche-han-inventado-biblioteca-publica-hot-wheels-no-te-dejes-todo-tu-dinero-coleccionar-coches">Deja un coche, coge un coche: la maravillosa biblioteca de intercambio de Hot Wheels que quiere ser tan popular como el 'bookcrossing'</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/cine-tv-juegos">Cine, TV y juegos</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>Si ha funcionado con libros, ¿por qué no con coches de juguete?</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/cine-tv-juegos/deja-coche-coge-coche-han-inventado-biblioteca-publica-hot-wheels-no-te-dejes-todo-tu-dinero-coleccionar-coches">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/cine-tv-juegos/deja-coche-coge-coche-han-inventado-biblioteca-publica-hot-wheels-no-te-dejes-todo-tu-dinero-coleccionar-coches#to-comments">
+      <span class="abstract-comment-count">1</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/alejandra-otero">Alejandra Otero</a>
+        <time title="2025-09-11T19:00:46Z" class="abstract-date" datetime="2025-09-11T19:00:46Z">2025-09-12T13:20:01Z</time>
+   </footer>
+   </div>
+</article>
+ 
+          <article class="recent-abstract abstract-article" data-post-id="331380">
+  <div class="abstract-figure">
+   <div class="base-asset-image">
+  <a href="https://www.motorpasion.com/coches-electricos/magia-baterias-estado-solido-este-mercedes-electrico-ha-viajado-alemania-a-suecia-parar-a-recargar-le-han-sobrado-137-km-autonomia">
+       <picture>
+        <source media="(min-width: 767px)" srcset="https://i.blogs.es/2f2e7d/mercedes-baterias/500_333.jpeg" width="500" height="333"/>
+        <source media="(min-width: 450px)" srcset="https://i.blogs.es/2f2e7d/mercedes-baterias/375_375.jpeg" width="375" height="375"/>
+        <source media="(min-width: 320px)" srcset="https://i.blogs.es/2f2e7d/mercedes-baterias/200_200.jpeg" width="200" height="200"/>
+      <img
+   alt="La batería de estado sólido ya no es un experimento de laboratorio: este Mercedes eléctrico ha ido de Alemania a Suecia sin recargar y le han sobrado 137 km de autonomía"
+   src="https://i.blogs.es/2f2e7d/mercedes-baterias/200_200.jpeg"
+   width="200"
+   height="200"
+  >
+ </picture>
+
+  </a>
+ </div>
+   </div>
+ <div class="abstract-content">
+    <header>
+   <h2 class="abstract-title"><a href="https://www.motorpasion.com/coches-electricos/magia-baterias-estado-solido-este-mercedes-electrico-ha-viajado-alemania-a-suecia-parar-a-recargar-le-han-sobrado-137-km-autonomia">La batería de estado sólido ya no es un experimento de laboratorio: este Mercedes eléctrico ha ido de Alemania a Suecia sin recargar y le han sobrado 137 km de autonomía</a></h2>
+            <a class="abstract-taxonomy" href="/categoria/coches-electricos">Coches eléctricos</a>
+         </header>
+      <div class="abstract-excerpt">
+                 <p>El sistema de batería de estado sólido se desarrolló en estrecha colaboración con Mercedes-AMG High Performance Powertrains, el centro tecnológico de Fórmula 1 de Mercedes.</p>
+             <a class="abstract-link-more" href="https://www.motorpasion.com/coches-electricos/magia-baterias-estado-solido-este-mercedes-electrico-ha-viajado-alemania-a-suecia-parar-a-recargar-le-han-sobrado-137-km-autonomia">Leer más &raquo;
+            </a>
+         </div>
+       <footer class="abstract-byline">
+         <a class="abstract-comments" href="https://www.motorpasion.com/coches-electricos/magia-baterias-estado-solido-este-mercedes-electrico-ha-viajado-alemania-a-suecia-parar-a-recargar-le-han-sobrado-137-km-autonomia#to-comments">
+      <span class="abstract-comment-count">5</span> <span class="abstract-comment-label">comentarios</span>
+     </a>
+             <a class="abstract-author" href="/autor/victoria-fuentes">Victoria Fuentes</a>
+        <time title="2025-09-11T17:00:46Z" class="abstract-date" datetime="2025-09-11T17:00:46Z">2025-09-12T07:43:24Z</time>
    </footer>
    </div>
 </article>
@@ -2045,7 +1910,7 @@ Sin embargo, son muchas...</p>
    <nav class="home-nav-list">
     <ul class="home-nav">
                           <li>
-       <a rel="next" class="btn btn-next" href="https://www.motorpasion.com/record/22">
+       <a rel="next" class="btn btn-next" href="https://www.motorpasion.com/record/23">
         Más antiguas<span class="arrow">&raquo;</span>
        </a>
       </li>
@@ -2232,7 +2097,7 @@ Sin embargo, son muchas...</p>
   </li>
  </ul>
    </div>
-    <nav class="menu-categories foot-menu-categories">
+      <nav class="menu-categories foot-menu-categories">
    <p class="nav-heading">En Motorpasión hablamos de...</p>
    <ul>
    <li>
@@ -2495,11 +2360,7 @@ Sin embargo, son muchas...</p>
   </div>
  
     </div>
-             <div class="foot-cookie-link">
-     <a href="javascript:Didomi.preferences.show()" class="list-item">Preferencias de Privacidad</a>
-           <a href="https://weblogs.webedia.es/aviso-legal.html" class="list-item">Política de privacidad</a>
-         </div>
-     </div>
+           </div>
  </div>
 </div>
  <aside id="head-favicons" class="head-favicons-container m-is-later js-head-favicons m-favicons-compact">
@@ -2869,7 +2730,7 @@ Sin embargo, son muchas...</p>
  <div class="head-menu">
   <a href="#sections" class="close close-corner js-toggle js-menu-close">Inicio</a>
   <div id="opt-in"></div>
-         <div id="sections-search"></div>
+           <div id="sections-search"></div>
    <script>
     document.getElementById("sections-search").innerHTML = '\
      <div class="head-menu-search">\
@@ -3194,146 +3055,138 @@ Sin embargo, son muchas...</p>
      <p class="nav-heading">Reciente</p>
     <ul id="recent-posts">
     <li>
-               <a href="/seguridad/colega-que-ese-tercer-pedal-intentaron-robar-suv-cambio-manual-no-sabian-conducirlo-asi-que-raptaron-a-su-dueno-hiciera" class="head-new-item">
-  Colega, ¿qué es ese tercer pedal? Intentaron robar un SUV con cambio manual pero no sabían conducirlo, así que raptaron a su dueño para que lo hiciera 
+               <a href="/videos-de-coches/hay-que-tener-mucho-dinero-para-comprarse-ferrari-muy-poca-educacion-para-dejarlo-aparcado-medio-cruce-nueva-york" class="head-new-item">
+  Hay que tener mucho dinero para comprarse un Ferrari... y muy poca educación para dejarlo aparcado en medio de un cruce de Nueva York 
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-24T11:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-14T06:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/honda/honda-revive-su-primera-victoria-formula-1-60-anos-despues-maqueta-que-cuesta-que-coche-nuevo" class="head-new-item">
-  Honda revive su primera victoria en la Fórmula 1, 60 años después, con una maqueta que cuesta más que un coche nuevo 
+               <a href="/compra-coches/kia-pv5-2025-primer-contacto" class="head-new-item">
+  Conocemos el Kia PV5: un monovolumen eléctrico que no es más grande por fuera que un SUV, pero con muchísimo más espacio por dentro
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-24T07:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-13T10:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.3djuegos.com/juegos/dying-light/noticias/mundo-abierto-zombies-exitoso-ultima-decada-esta-gratis-steam-tiempo-limitado?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  El mundo abierto con zombies más exitoso de la última década está gratis en Steam por tiempo limitado 
+               <a href="/tecnologia/dgt-conductores-futuro-seran-coches-que-decidan-eres-demasiado-mayor-para-conducir-estan-ello" class="head-new-item">
+  Ni la DGT ni los conductores: en el futuro serán los coches los que decidan si eres demasiado mayor para conducir. Y ya están en ello 
   <span class="head-item-meta">
-   de 3DJuegos <time class="js-header-post" datetime="2025-08-24T10:35:06Z"></time>
+   <time class="js-header-post" datetime="2025-09-13T08:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/formula1/90-empleados-voto-ferrari-hizo-encuesta-su-equipo-f1-para-decidir-fichaban-a-lewis-hamilton-parece-que-no-era-concluyente" class="head-new-item">
-  "El 90% de los empleados votó en contra". Ferrari hizo una encuesta en su equipo de F1 para decidir si fichaban a Lewis Hamilton. Parece que no era concluyente 
+               <a href="/industria/estudiante-metia-tres-goles-imposibles-concesionario-tenia-que-regalarle-coche-metio-goles-concesionario-se-metio-problema" class="head-new-item">
+  Si un estudiante metía tres goles imposibles, el concesionario tenía que regalarle un coche. Él metió los goles y el concesionario se metió en un problema  
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-23T13:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-13T06:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.espinof.com/listas/estos-remakes-anime-querian-superar-a-originales-terminaron-siendo-pufo-desencantando-a-fans?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  Estos remakes de anime querían superar a los originales pero terminaron siendo un pufo y desencantando a los fans 
+               <a href="/seguridad/1990-piloto-fue-succionado-ventanilla-cabina-a-5-000-metros-sobrevivio-porque-le-sujetaron-tobillos-durante-20-minutos" class="head-new-item">
+  En 1990 un piloto fue succionado por la ventanilla de la cabina a 5.000 metros. Sobrevivió porque le sujetaron por los tobillos durante 20 minutos
   <span class="head-item-meta">
-   de Espinof <time class="js-header-post" datetime="2025-08-23T13:42:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T18:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/ferrari/ferrari-records-v12-potente-marca-unico-mundo-ha-sido-cavallino-nuevo-caro-jamas-subastado" class="head-new-item">
-  El Ferrari de los récords: el cavallino nuevo más caro jamás subastado es único en el mundo y lleva el V12 de Ferrari más potente
+               <a href="/industria/inteligencia-artificial-desguaces-cuando-ia-decide-que-rentable-exportar-coche-troceado-como-siniestro-total-que-arreglarlo" class="head-new-item">
+  Inteligencia Artificial y desguaces:  cuando la IA decide que es más rentable exportar un coche troceado como siniestro total que arreglarlo 
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-23T10:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T16:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/seguridad/verano-mejor-epoca-ano-para-asfaltar-carreteras-sufras-tus-vacaciones-tiene-explicacion-1" class="head-new-item">
-  El verano es la mejor época del año para asfaltar carreteras, aunque lo sufras en tus vacaciones. Tiene una explicación 
+               <a href="https://www.xataka.com/musica/radiohead-ha-inventado-sistema-para-dificultar-reventa-entradas-a-costa-que-comprarlas-sea-incomodo-como-siempre?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  Radiohead ha inventado un sistema para dificultar la reventa de entradas. A costa de que comprarlas sea tan incómodo como siempre
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-23T07:00:46Z"></time>
+   de Xataka <time class="js-header-post" datetime="2025-09-12T16:14:18Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.3djuegos.com/tv-series/noticias/george-lucas-le-dio-consejo-al-director-mayor-fracaso-star-wars-no-olvides-esto-para-ninos-12-anos?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  George Lucas le dio un consejo al director del mayor fracaso de Star Wars: "No lo olvides, esto es para niños de 12 años" 
+               <a href="https://www.trendencias.com/familia-maternidad-y-ninos/he-estudiado-a-200-ninos-experta-crianza-comparte-habitos-padres-sus-hijos-sean-felices-que-demas?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  Lo que distingue a los padres de los niños más felices que el resto son cuatro hábitos. Con ellos enseñan inteligencia emocional a sus hijos
   <span class="head-item-meta">
-   de 3DJuegos <time class="js-header-post" datetime="2025-08-23T08:07:06Z"></time>
+   de Trendencias <time class="js-header-post" datetime="2025-09-12T16:13:50Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/tesla/pago-20-000-euros-extras-tesla-cybertruck-que-nunca-llegaron-ahora-ha-demandando-a-marca-elon-musk" class="head-new-item">
-  Pagó 20.000 euros por extras de la Tesla Cybertruck que nunca llegaron. Ahora ha demandando a la marca de Elon Musk
+               <a href="/observatorio-motorpasion/ventas-coches-electricos-se-disparan-todo-mundo-culpa-no-solo-china-europa-estamos-comprando-enchufables-que-nunca" class="head-new-item">
+  Las ventas de coches eléctricos se disparan en todo el mundo. La culpa no solo es de China: en Europa estamos comprando más enchufables que nunca
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-22T18:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T15:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.directoalpaladar.com/huerto/como-revivir-orquidea-tres-formas-devolverla-a-vida-1?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  Cómo revivir una orquídea: tres formas de devolverla a la vida
+               <a href="/compra-coches/fiat-grande-panda-electrico-precios-espana" class="head-new-item">
+  Fiat Panda ha sido un mito viviente, y ahora es uno de los coches eléctricos más baratos del mercado. Cuesta menos incluso que el BYD Dolphin Surf
   <span class="head-item-meta">
-   de Directo al Paladar <time class="js-header-post" datetime="2025-08-22T19:50:23Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T12:16:45Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/formula1/alpine-va-camino-batir-record-insolito-nunca-antes-peor-equipo-formula-1-habia-sido-bueno" class="head-new-item">
-  Alpine va camino de batir un récord insólito: nunca antes el peor equipo de la Fórmula 1 había sido tan bueno 
+               <a href="/audi/audi-se-ha-dado-cuenta-que-nadie-va-a-comprar-audi-rs-6-electrico-asi-que-han-cancelado" class="head-new-item">
+  Audi se ha dado cuenta que nadie va a comprar el Audi RS 6 eléctrico, así que lo han cancelado
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-22T13:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T12:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/observatorio-motorpasion/coches-electricos-baratos-autonomia-que-puedes-comprar-espana-ocu" class="head-new-item">
-  Los coches eléctricos más baratos y con más autonomía que puedes comprar en España, según la OCU
+               <a href="https://www.3djuegos.com/juegos/dd-neverwinter-nights-2-enhanced-edition/noticias/20-anos-despues-sigue-siendo-uno-mejores-rpg-fantasia-historia-tambien-uno-olvidados-desgracia-su-remaster-no-ayuda?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  No sé quién tuvo la brillante idea de ponerles a cargo de uno de los mejores RPG de fantasía de la historia, y ha ocurrido lo que más temía
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-22T11:00:46Z"></time>
+   de 3DJuegos <time class="js-header-post" datetime="2025-09-12T12:03:27Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.trendencias.com/viajes/pueblo-pesquero-galicia-alma-medieval-marisco-excepcional-turistas-se-van-a-sanxenxo?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  Buen marisco y un casco antiguo medieval: el pueblo pesquero más bonito de Galicia que supera a Sanxenxo
+               <a href="https://www.motorpasionmoto.com/deportivas/suzuki-se-acaba-sacar-manga-moto-bonita-historia-japonesa-rapida-no-tiene-sentido?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  Suzuki se acaba de sacar de la manga la moto más bonita del mundo. Es la japonesa más rápida, y no tiene sentido 
   <span class="head-item-meta">
-   de Trendencias <time class="js-header-post" datetime="2025-08-22T12:06:07Z"></time>
+   de Motorpasion Moto <time class="js-header-post" datetime="2025-09-12T12:03:00Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/clasicos/dominos-repartio-pizzas-estos-triciclos-futuristas-80-uno-acaba-venderse-que-cuesta-toyota-corolla-cupra-formentor" class="head-new-item">
-  Domino’s repartió pizzas con estos triciclos futuristas en los 80: uno acaba de venderse por lo que cuesta un Toyota Corolla o un CUPRA Formentor
+               <a href="/industria/fabricantes-toda-vida-necesitan-tecnologia-china-para-seguir-carrera-coche-electrico-asi-que-china-ha-dado-clave-exito-venderles-baterias-motores-marca-blanca" class="head-new-item">
+  Los fabricantes de toda la vida necesitan la tecnología china para seguir en la carrera del coche eléctrico, así que China ha dado con la clave del éxito: venderles baterías y motores de marca blanca 
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-22T09:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T11:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.3djuegos.com/tv-series/noticias/ocho-dias-llega-a-hbo-max-serie-perfecta-para-fans-vikingos-juego-tronos-rey-conquistador-fecha-su-estreno-espana?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  En ocho días llega a HBO Max una serie perfecta para los fans de Vikingos y Juego de Tronos. Rey y Conquistador fecha su estreno en España 
+               <a href="/revision/volante-tu-coche-vibra-todo-autovia-puede-ser-uno-estos-cinco-motivos" class="head-new-item">
+  El volante de tu coche vibra, sobre todo en autovía. Puede ser por uno de estos cinco motivos 
   <span class="head-item-meta">
-   de 3DJuegos <time class="js-header-post" datetime="2025-08-22T09:35:09Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T08:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="/formula1/sordida-historia-taki-inoue-unico-piloto-f1-que-fue-atropellado-dos-veces-safety-car-1" class="head-new-item">
-  La sórdida historia de Taki Inoue, el único piloto de F1 que fue atropellado dos veces por el Safety Car  
+               <a href="/superlujo/mantener-bugatti-puede-arruinarte-no-eliges-bien-taller-al-que-llevarlo-le-cobraban-11-000-euros-arreglar-boton-al-final-le-costo-cerveza" class="head-new-item">
+  Mantener un Bugatti puede arruinarte si no eliges bien el taller al que llevarlo: le cobraban 11.000 euros por arreglar un botón. Y al final le costó una cerveza
   <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-22T07:00:46Z"></time>
+   <time class="js-header-post" datetime="2025-09-12T07:00:46Z"></time>
   </span>
  </a>
    </li>
  <li>
-               <a href="https://www.xataka.com/seleccion/solucion-a-falta-espacio-pc-pasa-buen-ssd-gran-capacidad-este-4-tb-puede-ser-eleccion-perfecta?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
-  Más de 120.000 reseñas, 4 TB de capacidad y buen precio: este SSD Crucial es de las mejores ofertas del momento en almacenamiento
+               <a href="https://www.directoalpaladar.com/decoracion-de-cocinas/esto-que-arruina-bonito-diseno-cocina-super-facil-evitar?utm_source=motorpasion&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  Este gesto arruina cualquier diseño de cocina, por bueno que sea, y es super fácil de evitar
   <span class="head-item-meta">
-   de Xataka <time class="js-header-post" datetime="2025-08-22T07:48:18Z"></time>
-  </span>
- </a>
-   </li>
- <li>
-               <a href="/cine-tv-juegos/segunda-juventud-coches-peliculas-miticas-se-han-convertido-joyas-pujas-hay-quien-paga-millonadas-ellos" class="head-new-item">
-  La segunda juventud de los coches de películas míticas. Se han convertido en las joyas de las pujas, y hay quien paga millonadas por ellos
-  <span class="head-item-meta">
-   <time class="js-header-post" datetime="2025-08-21T19:00:45Z"></time>
+   de Directo al Paladar <time class="js-header-post" datetime="2025-09-12T07:37:54Z"></time>
   </span>
  </a>
    </li>
@@ -3460,6 +3313,7 @@ Sin embargo, son muchas...</p>
  WSL2.config.enableSocialLogin = 1;
  WSL2.config.removeSocialLogin = 1;
  WSL2.config.enableTaboolaIntegration = "0";
+ WSL2.config.taboolaPublisherId = "webediaes-network";
  WSL2.config.enablePerformanceImprovements = "0";
  WSL2.config.enableGoogleCustomSearchEngine = "0";
  WSL2.config.enableInpEventLog = 0;
@@ -3493,7 +3347,7 @@ Sin embargo, son muchas...</p>
  WSL2.config.useTimeAbbreviations = "0";
 </script>
   <div id="dialog"></div>
-<script src="https://img.weblogssl.com/LPbackend/prod/v3/js/runtime.b50307a2.js" defer></script><script src="https://img.weblogssl.com/LPbackend/prod/v3/js/241.7175a57a.js" defer></script><script src="https://img.weblogssl.com/LPbackend/prod/v3/js/homepage.1493f3c5.js" defer></script>
+<script src="https://img.weblogssl.com/LPbackend/prod/v3/js/runtime.4247df01.js" defer></script><script src="https://img.weblogssl.com/LPbackend/prod/v3/js/241.7175a57a.js" defer></script><script src="https://img.weblogssl.com/LPbackend/prod/v3/js/homepage.1493f3c5.js" defer></script>
 <div class="ui-widget-overlay video-light-box-overlay" id="ui-widget-overlay" style="display:none;"></div>
  </body>
 </html>
